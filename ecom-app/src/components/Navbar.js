@@ -1,22 +1,29 @@
 import React from 'react';
 
 const navbar = () => {
-    return <nav className='navbar'>
-   <div className="avatar-header1">
-    <div className="container">
-      <div className="logo-img">
-         
-          <div className="logo-text">FATISH UI</div>
+  return <
+    nav className="navbar-head-container">
+        <div className="navbar-md-head">
+
+            <div className="navbar-head-logo">
+            <h2>FESHION SHOP</h2>
       </div>
-
-          <div className="text">
-          <div className="home"><a class="text" href="#">HOME</a></div>
-          <div className="home"><a class="text" href="#">About</a></div>
+      
+      <div className='navbar-searchbox-container'>
+      <input className='search-input' placeholder='Enter something'  ></input>
+        
       </div>
-
-    </div>
-
-</div>
-  </nav>
+      <div className='navbar-icons'>
+        heart
+        cart
+        user
+      </div>
+      <div className='seprator'></div>
+      <div className='navbar-login-signin'>
+        <button>login</button>
+        <button>Signin</button>
+      </div>
+      </div>
+    </nav>
 };
 export default navbar;
