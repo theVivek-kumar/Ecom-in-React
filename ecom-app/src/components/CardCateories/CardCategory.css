@@ -11,6 +11,9 @@
  --FOOTER-color : #202020;
  --font-color-cta: white;
 }
+body{
+    background-color:linear-gradient(#fefefe, #f5f5f5, #f9f9f9);
+}
  .card-product-section-category-content {
      display: flex;
      font-size: 1.8rem;
@@ -49,15 +52,13 @@
      gap: 1rem;
  }
 
-
-
  .hero-img {
      width: 50%;
  }
 
  .logo-img {
-     width: 6rem;
-     height: 6rem;
+     width: 10rem;
+     height: 10rem;
      border-radius: 50px;
      padding: rem;
 

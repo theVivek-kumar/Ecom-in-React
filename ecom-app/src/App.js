@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar></Navbar>
+      <div className='seprator'></div>
       <CardComponent></CardComponent>
       <Heading></Heading>
       <Cardcategory></Cardcategory>
