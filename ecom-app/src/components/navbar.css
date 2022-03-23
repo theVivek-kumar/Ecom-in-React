@@ -7,6 +7,9 @@
     box-sizing: border-box;
 
 }
+:root{
+       --font-color-cta-Primery: rgb(18, 11, 24);
+}
 
 .App-logo {
     height: 40vmin;
@@ -22,4 +25,71 @@
 .navbar-md-head{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: whitesmoke;
+    padding: .5rem;
+}
+.navbar-header{
+    font-size: 2.5rem;
+    color: var(--font-color-cta-Primery);
+    font-family: monospace;
+    font-weight: 500;
+}
+.navbar-icons{
+      display: flex;
+      gap: 2rem;
+      font-size: 2rem;
+
+    
+}
+.seprator{
+    width: 1px;
+    height: auto;
+    background-color:var(--font-color-cta-Primery);
+}
+.navbar-searchbox-container{
+    display: flex;
+}
+.search-icon {
+    font-size: 2rem;
+    
+}
+.search-input{
+    border-radius: 3px;
+    border: none;
+    width: 20rem;
+    background-color: whitesmoke;
+}
+.search-input :focus{
+    border: none;
+}
+.navbar-login-signin{
+    display: flex;
+    gap: .8rem;
+}
+.btn-login{
+     padding-left: 10px;
+     padding-right: 10px;
+     height: 3rem;
+    background-color: var(--font-color-cta-Primery);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+}
+.btn-sigin{
+    
+      padding-left: 8px;
+      padding-right: 8px;
+      height: 3rem;
+      color: var(--font-color-cta-Primery);
+      border-radius: 5px;
+      border: 2px solid var(--font-color-cta-Primery);
+      font-family: 'Poppins';
+      font-weight: 400;
+      font-size: 12px;
+
 }
