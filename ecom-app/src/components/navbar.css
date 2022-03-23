@@ -24,11 +24,13 @@
 
 .navbar-md-head{
     display: flex;
+    height: 5rem;
     justify-content: space-around;
     align-items: center;
     align-content: center;
     background-color: #132429;
     padding: .5rem;
+    
 }
 .navbar-header{
     font-size: 2.5rem;
@@ -36,6 +38,9 @@
     font-family: monospace;
     font-weight: 500;
     color: rgb(255, 255, 255);
+}
+.navbar-header-heading{
+    color: rgb(255, 174, 0);
 }
 .navbar-icons{
       display: flex;
@@ -63,7 +68,7 @@
 .search-input{
     border-radius: 3px;
     border: none;
-    width: 25rem;
+    width: 28rem;
     height: 2.5rem;
     background-color: rgb(255, 255, 255);
 }
@@ -72,13 +77,13 @@
 }
 .navbar-login-signin{
     display: flex;
-    gap: .8rem;
+    gap: 1rem;
 }
 .btn-login{
      padding-left: 10px;
      padding-right: 10px;
      height: 3rem;
-    background-color: var(--font-color-cta-Primery);
+    background-color: rgb(255, 175, 1);
     color: white;
     border-radius: 5px;
     border: none;

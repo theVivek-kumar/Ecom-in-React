@@ -11,7 +11,7 @@ const navbar = () => {
         <div className="navbar-md-head">
 
             <div className="navbar-head-logo">
-            <h2 className='navbar-header'>FASHION SHOP</h2>
+            <h2 className='navbar-header'>FASHION <span className='navbar-header-heading'> SHOP</span></h2>
       </div>
       
       <div className='navbar-searchbox-container'>

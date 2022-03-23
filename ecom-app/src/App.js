@@ -8,7 +8,8 @@ import { Heading } from './/components/BreackHeading/BreakHeading';
 import './components/BreackHeading/BreakHeading.css';
 import { Cardcategory } from './components/CardCateories/CardCategory';
 import './components/CardCateories/CardCategory.css';
-
+import { Footer } from './components/Footer/Footer';
+import './components/Footer/Footer.css'
 function App() {
   return (
     <div className="App">
@@ -17,6 +18,9 @@ function App() {
       <CardComponent></CardComponent>
       <Heading></Heading>
       <Cardcategory></Cardcategory>
+      <Heading></Heading>
+      <Cardcategory></Cardcategory>
+      <Footer></Footer>
       
     </div>
   );

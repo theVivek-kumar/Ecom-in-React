@@ -4,10 +4,10 @@
     box-sizing: border-box;
 
 } :root{
- --font-color: #282a36;
+ --font-color: #161820;
  --BACKGROUND-color : #f39494;
- --PRIMERY-color : rgba(12, 109, 165, 0.842);
- --SECONDERY-color : rgb(255, 196, 1);
+ --PRIMERY-color : rgb(0, 162, 255);
+ --SECONDERY-color : rgb(255, 175, 1);
  --FOOTER-color : #202020;
  --font-color-cta: white;
 }

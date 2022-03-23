@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.Footer-body-container{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 5rem;
+    background-color: RGB(18, 36, 40);
+    color: white;
+    font-size: 1.2rem;
+}
+.footer-container-table{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 5rem;
+      
+}
+.footer-contact{
+    margin: 2rem ;
+}
+.three{
+    font-size: 2.5rem;
+     
+}
+.one{
+    font-size: 2.1rem;
+   
+
+}
+.two{
+     margin: 2.4rem auto;
+
+}
+.footer-list{
+    display: flex;
+    margin: 3rem auto;
+    gap: 1rem;
+}
