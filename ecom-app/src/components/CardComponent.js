@@ -11,9 +11,7 @@ const CardComponent = () => {
                     <a href="/my-cart/home/home.html">GET STARTED</a>
                     <a className="Secondary-btn" href="/my-cart/wishlist/wishlist.html">BUY NOW</a>
                     </div>
-                    <p className="hero-section-paragraph">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                     <p className="hero-section-paragraph-1">Lorem Ipsum has been the industry's standard dummy text </p>    
-                    </p>
+                    
             </div>  
             </div>
             </div>   

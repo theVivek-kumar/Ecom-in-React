@@ -1,7 +1,9 @@
 import React from "react";
 const Heading = () => {
     return (
-        <div> </div>
+        <div className="Break-out-heading"> 
+            FEATURED CATEGORIES
+        </div>
         
     )
     
