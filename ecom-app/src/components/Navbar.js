@@ -11,17 +11,18 @@ const navbar = () => {
         <div className="navbar-md-head">
 
             <div className="navbar-head-logo">
-            <h2 className='navbar-header'>FESHION SHOP</h2>
+            <h2 className='navbar-header'>FASHION SHOP</h2>
       </div>
       
       <div className='navbar-searchbox-container'>
-      <input className='search-input' placeholder='     Search for procuct,and more...'  ></input> <div className='search-icon'><BiSearch/></div>
+          <input className='search-input' placeholder=' Search for procuct,and more...'  ></input> <div className='search-icon'><BiSearch className='search-icon' />
+          </div>
         
       </div>
       <div className='navbar-icons'>
-        <BsCartCheck />
-        <BiUser/>
-        <BiHeart/>
+        <BsCartCheck className='icons' />
+        <BiUser className='icons'/>
+        <BiHeart className='icons'/>
       </div>
       <div className='seprator'></div>
       <div className='navbar-login-signin'>

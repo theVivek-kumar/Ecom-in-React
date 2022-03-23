@@ -27,7 +27,7 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    background-color: whitesmoke;
+    background-color: #135a91;
     padding: .5rem;
 }
 .navbar-header{
@@ -35,31 +35,37 @@
     color: var(--font-color-cta-Primery);
     font-family: monospace;
     font-weight: 500;
+    color: rgb(255, 255, 255);
 }
 .navbar-icons{
       display: flex;
       gap: 2rem;
-      font-size: 2rem;
+      font-size: 2rem; 
+}
 
-    
-}
-.seprator{
-    width: 1px;
-    height: auto;
-    background-color:var(--font-color-cta-Primery);
-}
 .navbar-searchbox-container{
     display: flex;
 }
 .search-icon {
+  
     font-size: 2rem;
-    
+    display: flex;
+    margin-left: 1rem;
+    color: rgb(34, 34, 34);
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    border-radius: 4px;
+    padding-right:1px ;
+}
+.icons{
+    color: rgb(255, 255, 255);
 }
 .search-input{
     border-radius: 3px;
     border: none;
-    width: 20rem;
-    background-color: whitesmoke;
+    width: 25rem;
+    height: 2.5rem;
+    background-color: rgb(255, 255, 255);
 }
 .search-input :focus{
     border: none;
@@ -87,7 +93,7 @@
       height: 3rem;
       color: var(--font-color-cta-Primery);
       border-radius: 5px;
-      border: 2px solid var(--font-color-cta-Primery);
+      border: 2px solid ;
       font-family: 'Poppins';
       font-weight: 400;
       font-size: 12px;

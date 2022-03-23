@@ -1,0 +1,107 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+     a {
+         text-decoration: none;
+     }
+
+     li {
+         list-style: none;
+     }
+
+
+
+
+.container {
+    display: flex;
+    margin-left: 8.5rem ;
+    height: auto;
+}
+
+
+
+.hero-btn-section{
+    display: flex;
+    gap: 2rem;
+   
+}
+
+.hero-section-paragraph{
+    font-size: 1.5rem;
+    font-family:sans-serif;
+    margin-top: 3rem;
+}
+
+
+.h3-hero-section-text {
+    color: #222222;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 5rem;
+    display: flex;
+    justify-content: left;
+    padding-top: 5rem;
+   
+}
+.h3-hero-section-text-cta{
+     color: #222222;
+     font-family: 'Times New Roman',
+     Times,
+     serif;
+     font-weight: 600;
+     font-size: 4.6rem;
+     display: flex;
+     justify-content: left;
+     padding-top: 1rem;
+     color: #135a91;
+
+}
+
+.container div a {
+    padding: 12px;
+    background: rgb(51, 51, 51);
+    margin: 20px 0;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: 1.5s;
+}
+
+.Secondary-btn {
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid #135a91;
+    display: inline-block;
+    color: rgb(34, 34, 34) !important;
+    background-color: #f0f0f0 !important;
+    border-radius: 10px;
+    transition: 1.5s;
+
+}
+.heading-text{
+    display: flex;
+    flex-direction: column;
+    color: #135a91;
+}
+
+
+.container div a:hover {
+    background-color: dodgerblue;
+    color: black;
+    transition: 1s;
+}
+
+.headphone {
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    opacity: .1;
+    z-index: -1;
+}
