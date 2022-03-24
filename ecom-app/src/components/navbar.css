@@ -30,6 +30,7 @@
     align-content: center;
     background-color: #132429;
     padding: .5rem;
+    flex-wrap: wrap;
     
 }
 .navbar-header{

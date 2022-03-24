@@ -16,8 +16,11 @@
 
 .container-hero {
     display: flex;
-    margin-left: 8.5rem ;
     height: auto;
+    padding: 4rem;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
 }
 
 
@@ -56,7 +59,7 @@
      display: flex;
      justify-content: left;
      padding-top: 2.5rem;
-     color: #135a91;
+     color: #0091ff;
 
 }
 
@@ -86,11 +89,16 @@
     display: flex;
     flex-direction: column;
     color: #135a91;
+   
 }
 .hero-img{
-    width: 60%;
+    width: auto;
     height: auto;
     margin-left:5rem;
+}
+.hero-img-head{
+    width: auto;
+    height: auto;
 }
 
 

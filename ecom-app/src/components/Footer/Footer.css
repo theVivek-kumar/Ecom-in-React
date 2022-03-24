@@ -16,8 +16,8 @@
 .footer-container-table{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    margin: 5rem;
+    justify-content: flex-start;
+    margin:5rem;
       
 }
 .footer-contact{
@@ -33,7 +33,7 @@
 
 }
 .two{
-     margin: 2.4rem auto;
+    
 
 }
 .footer-list{

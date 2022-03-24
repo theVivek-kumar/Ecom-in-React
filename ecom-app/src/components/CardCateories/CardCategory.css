@@ -33,6 +33,7 @@ body{
      display: flex;
      justify-content: center;
      gap: 1rem;
+     flex-wrap: wrap;
      background-color: var(--PRIMERY-color);
      padding: 2rem;
  }
