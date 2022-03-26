@@ -10,6 +10,8 @@ import { Cardcategory } from './components/CardCateories/CardCategory';
 import './components/CardCateories/CardCategory.css';
 import { Footer } from './components/Footer/Footer';
 import './components/Footer/Footer.css'
+import { Login } from './components/Login/Login';
+import './components/Login/Login.css';
 function App() {
   return (
     <div className="App">
@@ -21,6 +23,7 @@ function App() {
       <Heading></Heading>
       <Cardcategory></Cardcategory>
       <Footer></Footer>
+      <Login></Login>
       
     </div>
   );
