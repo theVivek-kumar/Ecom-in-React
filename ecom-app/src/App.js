@@ -23,6 +23,8 @@ function App() {
       <Heading></Heading>
       <Cardcategory></Cardcategory>
       <Footer></Footer>
+       <div className='seprator'></div>
+      <Navbar></Navbar>
       <Login></Login>
       
     </div>
