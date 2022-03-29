@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root {
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+    --font-color: #282a36;
+    --BACKGROUND-color: #f39494;
+    --PRIMERY-color: rgb(12, 109, 165);
+    --SECONDERY-color: #fe9900;
+    --FOOTER-color: #202020;
+    --font-color: white;
+
+}
+
+/*procuct*/
+.product-page-main {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.filter-section,
+.products,
+.wishlist,
+.cart,
+.similar-products {
+    padding: 2rem 1.5rem 1.5rem;
+}
+
+.show-filter-section-btn {
+    display: none;
+}
+
+.filter-section {
+    position: static;
+    top: 4rem;
+    padding-top: 0;
+    margin-top: 0;
+    width: 22rem;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.checkbox-input{
+    display: flex;
+}
+
+.filter-close-btn {
+    display: none;
+}
+
+.filter-section>div button {
+    color: var(--title-color);
+}
+
+.filter-section h2,
+.products>h1,
+.card-text h1 {
+    color: var(--title-color);
+}
+
+.card-text h1 {
+    font-size: 0.9rem;
+}
+
+.filter-section label,
+.filter-section p {
+    color: var(--sub-title-color);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.products>h1 {
+    padding-left: 1rem;
+}
+
+.products>div>div {
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+button {
+    cursor: pointer;
+}
+
+form>div {
+    margin: 2rem 0;
+}
+
+.filter h2,
+.filter button,
+form>div>h2,
+.products>h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+    font-weight: 400;
+}
+
+.slider-bar {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.price>div {
+    margin-bottom: -0.6rem;
+    font-size: 1rem;
+    width: 12rem;
+}
+
+.price-label {
+    margin-top: 1rem;
+    max-width: 100%;
+}
+.slider{
+    width: 22rem;
+}
+
+.range-input,
+.category>div>div,
+.brand>div>div,
+.rating>div,
+.sort>div {
+    width: 100%;
+    padding: .4rem;
+    margin-left: 0;
+}
+
+.filter h2,
+.filter button {
+    padding: 0.3rem auto;
+    border: none;
+    background: none;
+}
+
+.filter-section input[type="checkbox"],
+.filter-section input[type="radio"] {
+    width: 1.5rem;
+}
+
+form>div>button {
+    text-decoration: underline;
+    align-self: flex-start;
+}
+
+.modal-active-shadow {
+    box-shadow: 0 0 0 300rem rgba(0, 0, 0, 0.7);
+}
+
+.flex-justify-space-between {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.slider {
+    width: 100%;
+    padding: .5rem;
+}
+
+/*********************************CARD-VERTICAL***********************/
+.card-vertical {
+    width: 30%;
+    background-color: var(--font-color);
+    padding: 1rem;
+
+}
+
+.flex-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.CARD-IMG-product-list {
+    width: 100%;
+}
+
+.card-nav-icon {
+    display: flex;
+    float: right;
+    border: none;
+    gap: .3rem;
+    font-size: 1.3rem;
+}
+
+.card-text {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.add-cart {
+    border: none;
+    padding: .5rem;
+    background-color: var(--SECONDERY-color);
+    font-weight: 600;
+    border-radius: 10px;
+
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card-cta-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    color: green;
+}
+
+.products h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+
+}

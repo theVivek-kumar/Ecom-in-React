@@ -5,7 +5,7 @@ import { BiHeart } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
 
 
-const navbar = () => {
+const Navbar = () => {
   return (
     <nav className="navbar-head-container">
         <div className="navbar-md-head">
@@ -33,4 +33,4 @@ const navbar = () => {
     </nav >
   )
 };
-export default navbar;
+export default Navbar;

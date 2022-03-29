@@ -12,6 +12,8 @@ import { Footer } from './components/Footer/Footer';
 import './components/Footer/Footer.css'
 import { Login } from './components/Login/Login';
 import './components/Login/Login.css';
+import { Product } from './components/Product/Product';
+import './components/Product/Product.css';
 function App() {
   return (
     <div className="App">
@@ -26,6 +28,7 @@ function App() {
        <div className='seprator'></div>
       <Navbar></Navbar>
       <Login></Login>
+      <Product></Product>
       
     </div>
   );
