@@ -20,149 +20,10 @@
 }
 
 /*procuct*/
-.product-page-main {
+
+.aside-bar-main-content{
     display: grid;
     grid-template-columns: 20% 80%;
-}
-
-.filter-section,
-.products,
-.wishlist,
-.cart,
-.similar-products {
-    padding: 2rem 1.5rem 1.5rem;
-}
-
-.show-filter-section-btn {
-    display: none;
-}
-
-.filter-section {
-    position: static;
-    top: 4rem;
-    padding-top: 0;
-    margin-top: 0;
-    width: 22rem;
-    height: 100vh;
-    overflow-y: scroll;
-}
-.checkbox-input{
-    display: flex;
-}
-
-.filter-close-btn {
-    display: none;
-}
-
-.filter-section>div button {
-    color: var(--title-color);
-}
-
-.filter-section h2,
-.products>h1,
-.card-text h1 {
-    color: var(--title-color);
-}
-
-.card-text h1 {
-    font-size: 0.9rem;
-}
-
-.filter-section label,
-.filter-section p {
-    color: var(--sub-title-color);
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-
-.products>h1 {
-    padding-left: 1rem;
-}
-
-.products>div>div {
-    border: none;
-    border-radius: 4px;
-}
-
-
-
-button {
-    cursor: pointer;
-}
-
-form>div {
-    margin: 2rem 0;
-}
-
-.filter h2,
-.filter button,
-form>div>h2,
-.products>h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.6rem;
-    font-weight: 400;
-}
-
-.slider-bar {
-    display: flex;
-    flex-direction: column;
-   
-}
-
-.price>div {
-    margin-bottom: -0.6rem;
-    font-size: 1rem;
-    width: 12rem;
-}
-
-.price-label {
-    margin-top: 1rem;
-    max-width: 100%;
-}
-.slider{
-    width: 22rem;
-}
-
-.range-input,
-.category>div>div,
-.brand>div>div,
-.rating>div,
-.sort>div {
-    width: 100%;
-    padding: .4rem;
-    margin-left: 0;
-}
-
-.filter h2,
-.filter button {
-    padding: 0.3rem auto;
-    border: none;
-    background: none;
-}
-
-.filter-section input[type="checkbox"],
-.filter-section input[type="radio"] {
-    width: 1.5rem;
-}
-
-form>div>button {
-    text-decoration: underline;
-    align-self: flex-start;
-}
-
-.modal-active-shadow {
-    box-shadow: 0 0 0 300rem rgba(0, 0, 0, 0.7);
-}
-
-.flex-justify-space-between {
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.slider {
-    width: 100%;
-    padding: .5rem;
 }
 
 /*********************************CARD-VERTICAL***********************/
@@ -225,4 +86,137 @@ form>div>button {
     justify-content: center;
     font-weight: 600;
 
+}
+/**************************************************/
+.body-section {
+   width: 20%;
+
+}
+
+.aside-section {
+    background-color: gainsboro;
+    overflow-y: scroll;
+    /* max-height: 200%; */
+    /*max-width: 25rem;*/
+    padding: 2rem 2.5rem;
+}
+
+.main-section{
+    /* background-color: rgba(189, 204, 189, 0.781); */
+    width: 100%;
+}
+
+.aside-section-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+}
+
+.aside-section-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.clear-btn{
+    text-decoration: underline;
+    color: green;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.price-section{
+    margin: 2rem 0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+ 
+}
+
+.aside-section-title-md{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.range-input-container{
+    padding: 1.5rem 0rem;
+}
+
+.price-label{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 19rem;
+    color: var(--BLACK-80);
+}
+
+.input-range{
+    accent-color: blue;
+    width: 18rem;
+    font-size: larger;
+   
+}
+
+.checkbox-input{
+    display: flex;
+    gap: 1rem;
+    margin-top: 0;
+    align-content: center;
+    accent-color: blue;
+}
+
+.category-section-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.checkbox{
+    height: 1.3rem;
+    width: 1.3rem;
+    display: flex;
+    
+}
+
+.rating-section{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+}
+
+
+.radio{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fa-star{
+    font-size: 1.5rem;
+}
+
+.radio-input{
+    accent-color: rgb(0, 183, 255);
+     display: flex;
+    gap: 10px;
+
+}
+
+.main-section{
+    padding: 3rem ;
+}
+
+.main-section-title{
+    font-size: 3rem;
+    font-weight: 550;
+}
+
+.main-section-card{
+   margin-top: 4rem;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4rem;
+   justify-content: center;
+   align-items: center;
 }

@@ -40,11 +40,11 @@
     margin-top: 1rem;
 }
 
-label {
+.label {
     font-weight: 500;
     display: flex;
     justify-content: flex-start;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
 }
 

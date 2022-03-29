@@ -1,104 +1,131 @@
 import React from "react";
 import Navbar from "../Navbar";
+import { FaStar } from "react-icons/fa";
 
 const Product = () => {
     return (
         <>
             <Navbar/>
          
-
-
-       <div className="product-page-main mg-3-bot">
-        <button className="show-filter-section-btn btn primary-text-btn-lg">Filter <i className="fas fa-chevron-right"></i></button>
-        <form id="filter-section" className="filter-section">
-            <button className="filter-close-btn"><i className="far fa-times-circle"></i></button>
-            <div className="filter flex-row flex-justify-space-between">
-                <h2>Filter</h2>
-                <button type="reset">Clear</button>
+      {/* ...........aside-bar........... */} 
+        <div className="aside-bar-main-content warapper">
+      <aside className="aside-section">
+            <div className="aside-section-header">
+                <h3 className="aside-section-title">Filters</h3>
+                <a href="#" className="clear-btn">Clear All</a>
             </div>
-            <div className="price flex-col">
-                <h2>Price</h2>
-              
-                <div className="slider-bar">
-                <div className="price-label flex-row flex-justify-space-between">
-                       <p>1k</p> <p>2k</p> <p>3k</p> <p>4k</p> 
+
+            <div className="price-section">
+                <h3 className="aside-section-title-md">Price Range</h3>
+
+               
+                <div className="range-input-container">
+                    
+                    <div className="price-label">
+                        <p>{'\u20B9'} 500</p>
+                        <p>{'\u20B9'} 1000</p>
+                        <p>{'\u20B9'} 1500</p>
+                        <p>{'\u20B9'} 2000</p>
                     </div>
+                    <label className="slider" htmlFor="volume">
+                        <input className="input-range"
                        
-                        <input className="slider" type="range"/>
-                        
-                        </div>
-                
-                 
-            </div>
-            <div className="category">
-                <h2>Category</h2>
-                <div>
-                  
-                    <div className="checkbox-input">
-                        <input type="checkbox" name="check" checked/><label for="check">shirts</label>
-                    </div>
-                   
-                    <div className="checkbox-input">
-                        <input type="checkbox" name="check" /><label for="check">Jeans</label>
-                    </div>
-               
-                    <div className="checkbox-input">
-                        <input type="checkbox" name="check"/><label for="check">Hoodies</label>
-                    </div>
-                    
-                    
-                </div>
-            </div>
-            <div className="brand">
-                <h2>Brand</h2>
-                <div>
-                
-                    <div className="checkbox-input">
-                        <input type="checkbox" name="check" /><label for="check">Nike</label>
-                    </div>
-                    
-                    <div className="checkbox-input">
-                        <input type="checkbox" name="check" /><label for="check">Disel</label>
-                    </div>
-                  
-                    <div className="checkbox-input">
-                        <input type="checkbox" name="check" checked /><label for="check">Spyker</label>
-                    </div>
-                </div>
-            </div>
-            <div className="rating">
-                <h2>Ratings</h2>
-             
-                <div className="radio-input">
-                    <input type="radio" name="radio" /><label for="radio">4 star & above</label>
-                </div>
-              
-                <div className="radio-input">
-                    <input type="radio" name="radio" /><label for="radio">3 star & above</label>
-                </div>
-              
-                <div className="radio-input">
-                    <input type="radio" name="radio" /><label for="radio">2 star & above</label>
-                </div>
-               
-                <div className="radio-input">
-                    <input type="radio" name="radio" /><label for="radio">1 star & above</label>
-                </div>
-            </div>
-            <div className="sort">
-                <h2>Sort by</h2>
-             
-                <div className="radio-input">
-                    <input type="radio" name="sort" /><label for="radio">Price - Low to High</label>
-                </div>
-               
-                <div className="radio-input">
-                    <input type="radio" name="sort" /><label for="radio">Price - High to Low</label>
-                </div>
-            </div>
-        </form>
- 
+                         type="range" min="500" max="2500" 
+                         />
+                    </label>
 
+                </div>
+            </div>
+
+            <div className="category-section-aside">
+                <h3 className="aside-section-title-md">Categories</h3>
+                <div className="checkbox-input">
+                    <input type="checkbox" 
+                    name="check" className="checkbox"  />
+                    <label htmlFor="check">All Plants</label>
+                </div>
+               
+                <div className="checkbox-input">
+                    <input type="checkbox"
+                     name="check" className="checkbox" /><label htmlFor="check"> Air Purifying
+                        Plants</label>
+                </div>
+
+                <div className="checkbox-input">
+                    <input type="checkbox"
+                     name="check" className="checkbox" /><label htmlFor="check"> Flowering Plants</label>
+                </div>
+                
+                <div className="checkbox-input">
+                    <input type="checkbox" 
+                    name="check" className="checkbox" /><label htmlFor="check"> Indoor Plants</label>
+                </div>
+
+                <div className="checkbox-input">
+                    <input type="checkbox"
+                     name="check" className="checkbox" /><label htmlFor="check"> Herb Plants</label>
+                </div>
+            </div>
+
+            <div className="rating-section">
+                <h3 className="aside-section-title-md">Rating</h3>
+
+                <div className="radio-input">
+                    <input type="radio"
+                   
+                    value="4"
+                 
+                     name="radio" className="radio" /><label htmlFor="radio"> 4 <FaStar className="fa fa-star"
+                            style={{color: "orange"}}></FaStar> & above</label>
+                </div>
+
+                <div className="radio-input">
+                    <input type="radio" 
+                   
+                    value="3"
+                    
+                    name="radio" className="radio" /><label htmlFor="radio"> 3 <FaStar className="fa fa-star"
+                            style={{color: "orange"}}></FaStar> & above</label>
+                </div>
+
+                <div className="radio-input">
+                    <input type="radio" 
+               
+                    value="2" 
+                 
+                    name="radio" className="radio" /><label htmlFor="radio"> 2 <FaStar className="fa fa-star"
+                            style={{color: "orange"}}></FaStar> & above</label>
+                </div>
+
+                <div className="radio-input">
+                    <input type="radio" 
+                  
+                    value="1"
+                   
+                    name="radio" className="radio" /><label htmlFor="radio"> 1 <FaStar className="fa fa-star"
+                            style={{color: "orange"}}></FaStar> & above</label>
+                </div>
+            </div>
+
+            <div className="rating-section">
+                <h3 className="aside-section-title-md">Sort By</h3>
+
+                <div className="radio-input">
+                    <input 
+                    
+                    type="radio" name="sortby" className="radio" /><label htmlFor="radio"> Low to High</label>
+                </div>
+
+                <div className="radio-input">
+                    <input 
+                   
+                    type="radio" name="sortby" className="radio" /><label htmlFor="radio"> High to Low</label>
+                </div>
+            </div>
+
+        </aside>
+ 
+       {/* ...........main content........... */}
 
         <section className="products">
             <h1>Showing All Products</h1>
