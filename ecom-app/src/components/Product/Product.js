@@ -1,8 +1,29 @@
 import React from "react";
 import Navbar from "../Navbar";
 import { FaStar } from "react-icons/fa";
+import { Card } from "../Card/Card";
+import { products } from "../../backend/db/products";
+import { useState } from "react";
+import { useEffect } from "react";
+import { useContext } from "react";
+import axios from 'axios';
+
+
 
 const Product = () => {
+    
+ const [ productListing, setProductListing ] = useState([]);
+    console.log(productListing);
+
+    useEffect(() => {  
+    (async ()=>{
+        const response = await axios.get('/api/products');
+       if(response.status === 200){
+           setProductListing(response.data.products);
+       }
+    })();
+    }, [])
+    console.log(productListing);
     return (
         <>
             <Navbar/>
@@ -129,208 +150,12 @@ const Product = () => {
 
         <section className="products">
             <h1>Showing All Products</h1>
-            <div className="flex-row flex-wrap">
-                            
-                <div className="card-vertical card-dark">
-                    <div className="card-img-container">
-                        <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                    </div>
-                    <div className="card-text">
-                        <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam saepe quidem veniam.</h1>
-                        <h2 className="card-price">999/-</h2>
-                    </div>
-                    <div className="card-nav">
-                        <div className="card-cta-btn">
-                            <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                            <div className="card-nav-icon">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-shopping-cart"></i>
-                                    <i className="fas fa-share-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card-vertical card-dark">
-                    <div className="card-img-container">
-                        <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                    </div>
-                    <div className="card-text">
-                        <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h1>
-                        <h2 className="card-price">999/-</h2>
-                    </div>
-                    <div className="card-nav">
-                        <div className="card-cta-btn">
-                            <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                            <div className="card-nav-icon">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-shopping-cart"></i>
-                                <i className="fas fa-share-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card-vertical card-dark">
-                    <div className="card-img-container">
-                        <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                    </div>
-                    <div className="card-text">
-                        <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </h1>
-                        <h2 className="card-price">999/-</h2>
-                    </div>
-                    <div className="card-nav">
-                        <div className="card-cta-btn">
-                            <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                            <div className="card-nav-icon">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-shopping-cart"></i>
-                                <i className="fas fa-share-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card-vertical card-dark">
-                    <div className="card-img-container">
-                        <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                    </div>
-                    <div className="card-text">
-                        <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
-                        <h2 className="card-price">999/-</h2>
-                    </div>
-                    <div className="card-nav">
-                        <div className="card-cta-btn">
-                            <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                            <div className="card-nav-icon">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-shopping-cart"></i>
-                                <i className="fas fa-share-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="card-vertical card-dark">
-                    <div className="card-img-container">
-                        <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                    </div>
-                    <div className="card-text">
-                        <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
-                        <h2 className="card-price">999/-</h2>
-                    </div>
-                    <div className="card-nav">
-                        <div className="card-cta-btn">
-                            <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                            <div className="card-nav-icon">
-                                <i className="fas fa-star"></i>
-                                <i className="fas fa-shopping-cart"></i>
-                                <i className="fas fa-share-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div className="flex-row flex-wrap">
-                           
-                    <div className="card-vertical card-dark">
-                        <div className="card-img-container">
-                            <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                        </div>
-                        <div className="card-text">
-                            <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            </h1>
-                            <h2 className="card-price">999/-</h2>
-                        </div>
-                        <div className="card-nav">
-                            <div className="card-cta-btn">
-                                <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div className="card-nav-icon">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-shopping-cart"></i>
-                                    <i className="fas fa-share-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-vertical card-dark">
-                        <div className="card-img-container">
-                            <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                        </div>
-                        <div className="card-text">
-                            <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            </h1>
-                            <h2 className="card-price">999/-</h2>
-                        </div>
-                        <div className="card-nav">
-                            <div className="card-cta-btn">
-                                <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div className="card-nav-icon">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-shopping-cart"></i>
-                                    <i className="fas fa-share-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-vertical card-dark">
-                        <div className="card-img-container">
-                            <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                        </div>
-                        <div className="card-text">
-                            <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            </h1>
-                            <h2 className="card-price">999/-</h2>
-                        </div>
-                        <div className="card-nav">
-                            <div className="card-cta-btn">
-                                <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div className="card-nav-icon">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-shopping-cart"></i>
-                                    <i className="fas fa-share-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-vertical card-dark">
-                        <div className="card-img-container">
-                            <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                        </div>
-                        <div className="card-text">
-                            <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            </h1>
-                            <h2 className="card-price">999/-</h2>
-                        </div>
-                        <div className="card-nav">
-                            <div className="card-cta-btn">
-                                <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div className="card-nav-icon">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-shopping-cart"></i>
-                                    <i className="fas fa-share-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-vertical card-dark">
-                        <div className="card-img-container">
-                            <img className="CARD-IMG-product-list" src="/image/man's/m1.jpeg" alt="product-image" loading="lazy" />
-                        </div>
-                        <div className="card-text">
-                            <h1 className="card-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            </h1>
-                            <h2 className="card-price">999/-</h2>
-                        </div>
-                        <div className="card-nav">
-                            <div className="card-cta-btn">
-                                <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div className="card-nav-icon">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-shopping-cart"></i>
-                                    <i className="fas fa-share-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                
+                    <div className="flex-row flex-wrap">
+                        
+                        {productListing.map(product => (<Card key={product._id} product={product}/>))}
+                       
+                      
+                    
                 </div>
         </section>
     </div>
