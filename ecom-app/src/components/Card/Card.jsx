@@ -11,11 +11,17 @@ function Card({ product }) {
                             <img className="CARD-IMG-product-list" src={img} alt="product-image" loading="lazy" />
                          </div>
                          <div className="card-text">
-                            <h1 className="card-title">{title}
-                            </h1>
-                         <h2 className="card-price">{original}</h2>
-                         <h2 className="card-price">{discount}</h2>
-                         <h2 className="card-price">{discounted}</h2>
+                <h1 className="card-title title">{title}
+                    <p className="card-title desc">{desc}</p>
+                </h1>
+                </div>
+                                <div class="badge-rating">
+                                    3.5  <BsFillStarFill/>
+            </div>
+                         <div className='price-discription-container'>
+                         <h2 className="card-price orignal">{original}</h2>
+                         <h2 className="card-price discount">{discount}</h2>
+                         <h2 className="card-price discounted">{discounted}</h2>
                          </div>
                          <div className="card-nav">
                             <div className="card-cta-btn">

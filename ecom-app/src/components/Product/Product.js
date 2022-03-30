@@ -149,7 +149,7 @@ const Product = () => {
        {/* ...........main content........... */}
 
         <section className="products">
-            <h1>Showing All Products</h1>
+            <h1 className="content-heading">Showing All Products</h1>
                     <div className="flex-row flex-wrap">
                         
                         {productListing.map(product => (<Card key={product._id} product={product}/>))}

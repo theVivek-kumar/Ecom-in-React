@@ -15,7 +15,7 @@ export const products = [
     inStock: true,
      price: {
       original: "800",
-      discount: "50",
+      discount: "20%",
       discounted: "500",
     },
      img: "https://m.media-amazon.com/images/I/61j0cpBJjJS._AC_UL480_FMwebp_QL65_.jpg",
@@ -29,7 +29,7 @@ export const products = [
     inStock: true,
      price: {
       original: "1000",
-      discount: "50",
+      discount: "50%",
       discounted: "500",
     },
      img: "https://m.media-amazon.com/images/I/618Wek95laS._AC_UL480_FMwebp_QL65_.jpg",
@@ -43,8 +43,8 @@ export const products = [
     inStock: true,
      price: {
       original: "1200",
-      discount: "50",
-      discounted: "500",
+      discount: "50%",
+      discounted: "600",
     },
      img: "https://m.media-amazon.com/images/I/61RqedeafJL._AC_UL480_FMwebp_QL65_.jpg",
     categoryName: "Shirt",
@@ -52,14 +52,14 @@ export const products = [
   },
   {
        _id: uuid(),
-    title: "Amazon Brand - Inkast Denim Co",
+    title: "Amazon Brand - ",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 4.0,
     inStock: true,
      price: {
       original: "1200",
-      discount: "50",
-      discounted: "500",
+      discount: "50%",
+      discounted: "600",
     },
      img: "https://m.media-amazon.com/images/I/81kJzDOwjNL._AC_UL480_FMwebp_QL65_.jpg",
     categoryName: "Shirt",
@@ -72,8 +72,8 @@ export const products = [
      rating: 4.4,
     inStock: true,
      price: {
-      original: "1200",
-      discount: "50",
+      original: "1000",
+      discount: "50%",
       discounted: "500",
     },
      img: "https://m.media-amazon.com/images/I/61RqedeafJL._AC_UL480_FMwebp_QL65_.jpg",
@@ -88,8 +88,8 @@ export const products = [
     inStock: true,
      price: {
       original: "1200",
-      discount: "50",
-      discounted: "500",
+      discount: "20%",
+      discounted: "960",
     },
      img: "https://m.media-amazon.com/images/I/61RqedeafJL._AC_UL480_FMwebp_QL65_.jpg",
     categoryName: "Shirt",
