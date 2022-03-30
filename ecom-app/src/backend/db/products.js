@@ -80,6 +80,22 @@ export const products = [
     categoryName: "Shirt",
 
   },
+   {
+       _id: uuid(),
+    title: "IndoPrimo",
+    desc: "Men's Slim Fit Casual Shirt",
+     rating: 4.4,
+    inStock: true,
+     price: {
+      original: "1200",
+      discount: "50",
+      discounted: "500",
+    },
+     img: "https://m.media-amazon.com/images/I/61RqedeafJL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "Shirt",
+
+  },
+  
 
 
 ];

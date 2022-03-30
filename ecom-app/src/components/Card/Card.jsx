@@ -1,6 +1,7 @@
 import React from 'react';
-
-
+import { BsFillStarFill } from "react-icons/bs";
+import { BsCartCheckFill } from "react-icons/bs";
+import {BsShareFill } from "react-icons/bs";
 function Card({ product }) {
     const {title, desc, rating, instock,  price:{original, discount, discounted}, categoryName , img} = product;
     return (
@@ -12,17 +13,17 @@ function Card({ product }) {
                          <div className="card-text">
                             <h1 className="card-title">{title}
                             </h1>
-                 <h2 className="card-price">{original}</h2>
-                <h2 className="card-price">{discount}</h2>
-                 <h2 className="card-price">{discounted}</h2>
+                         <h2 className="card-price">{original}</h2>
+                         <h2 className="card-price">{discount}</h2>
+                         <h2 className="card-price">{discounted}</h2>
                          </div>
                          <div className="card-nav">
                             <div className="card-cta-btn">
                                 <button className="btn primary-btn-sm add-cart">Add to Cart</button>
                                 <div className="card-nav-icon">
-                                    <i className="fas fa-star"></i>
-                                    <i className="fas fa-shopping-cart"></i>
-                                    <i className="fas fa-share-alt"></i>
+                                   <BsFillStarFill/> {/* <i className="fas fa-star"></i> */}
+                                    <BsCartCheckFill/>{/* <i className="fas fa-shopping-cart"></i> */}
+                                   <BsShareFill/> {/* <i className="fas fa-share-alt"></i> */}
                                 </div>
                             </div>
                         </div>
