@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar";
 import { FaStar } from "react-icons/fa";
 import { Card } from "../Card/Card";
-// import { products } from "../../backend/db/products";
+//  import { products } from "../../backend/db/products";
 import { useState, useEffect, useContext } from "react";
 import axios from 'axios';
 import { ProductPageContext } from "./productPageContext";
@@ -11,7 +11,8 @@ import { ProductPageContext } from "./productPageContext";
 
 const Product = () => {
     const { sort, setSort, rating, setRating, priceRange, setPriceRange, category, setCategory } = useContext(ProductPageContext);
-    const [key, setKey] = useState(0);
+    const [key, setKey] = useState(0); 
+    const [productListing, setProductListing] = useState([]);
     console.log(sort);
     console.log(rating);
     console.log(priceRange);
@@ -24,6 +25,7 @@ const Product = () => {
         console.log("clicked");
         setKey(key + 1);
     }
+
     useEffect(() => {
         (async () => {
             const response = await axios.get(`api/products`);
@@ -33,31 +35,7 @@ const Product = () => {
             }
         })();
     }, []);
-    async function addToCart(product, setCart) {
-        const response = await axios({
-            method: "post",
-            url: `api/cart/cart`,
-            headers: { authorization: localStorage.getItem('token') },
-            data: {
-            product: product
-        }
-    });
-        console.log(response.data.cart);
-        setCart(response.data.cart);
-
-        async function addToWishlist() {
-            const response = await axios({
-                method: "post",
-                url: `api/wishlist/wishlist`,
-                headers: { authorization: localStorage.getItem('token') },
-                data: {
-                    product: product
-                }
-            });
-            console.log(response.data.wishlist);
-        
-        }
-    }
+ 
     const sortFunction = (productListing, sort) => {
         const sortedProductListing = [...productListing]
         if (sort) {
@@ -69,7 +47,8 @@ const Product = () => {
     }
 
     const sortedData = sortFunction(productListing, sort);
-    const sortedFunction = (productListing , rating) => {
+
+    const ratingFunction = (productListing , rating) => {
         const sortedProductListing = [...productListing];
         if (rating) {
             return sortedProductListing.filter(product => product.rating >= rating);
@@ -79,17 +58,22 @@ const Product = () => {
             return sortedProductListing;
         }
     }
-
+    
+   
     const filteredData = ratingFunction(sortedData, rating);
-    const priceRangeFunction = (productListing, priceRange) => {
-        const sortedProductListing = [...productListing];
-        if (priceRange) {
-            return sortedProductListing.filter(product => Number(product.price.discounted) <= Number(priceRange));
-        }
-        else {
-            return sortedProductListing;
-        }
+    
+
+        const priceRangeFunction = (productListing, priceRange) => {
+            const sortedProductListing = [...productListing];
+            if (priceRange) {
+                return sortedProductListing.filter(product => Number(product.price.discounted) <= Number(priceRange));
+            }
+            else {
+                return sortedProductListing;
+            }
     }
+    const filteredPriceData = priceRangeFunction(filteredData, priceRange);
+   
     const categoryFunction = (productListing, category) => {
         const sortedProductListing = [...productListing];
         if (category.allProducts) {
@@ -109,12 +93,12 @@ const Product = () => {
         }
         return sortedProductListing;
     }
+      const filteredCategoryData = categoryFunction(filteredPriceData, category);
 
 
 
     
-    
- const [ productListing, setProductListing ] = useState([]);
+  
     console.log(productListing);
     useEffect(() => {  
     (async ()=>{
@@ -258,8 +242,11 @@ const Product = () => {
             <h1 className="content-heading">Showing All Products</h1>
                     <div className="flex-row flex-wrap">
                         
-                        {productListing.map(product => (<Card key={product._id} product={product}/>))}
-                       
+                        {/* {productListing.map(product => (<Card key={product._id} product={product}/>))} */}
+                        {filteredCategoryData.map(product => (<Card key={product._id} product={product}
+                            clickhandler1={() => { }}
+                            clickHandler2={() => { }}
+                        />))}
                       
                     
                 </div>

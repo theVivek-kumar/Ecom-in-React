@@ -2,7 +2,7 @@ import React from 'react';
 import { BsFillStarFill } from "react-icons/bs";
 import { BsCartCheckFill } from "react-icons/bs";
 import {BsShareFill } from "react-icons/bs";
-function Card({ product }) {
+function Card({ product,addToCart,addToWishlist}) {
     const {title, desc, rating, instock,  price:{original, discount, discounted}, categoryName , img} = product;
     return (
       
@@ -27,9 +27,9 @@ function Card({ product }) {
                             <div className="card-cta-btn">
                                 <button className="btn primary-btn-sm add-cart">Add to Cart</button>
                                 <div className="card-nav-icon">
-                                   <BsFillStarFill/> {/* <i className="fas fa-star"></i> */}
-                                    <BsCartCheckFill/>{/* <i className="fas fa-shopping-cart"></i> */}
-                                   <BsShareFill/> {/* <i className="fas fa-share-alt"></i> */}
+                                   <button onClick={addToWishlist}><BsFillStarFill/> </button>
+                                    <button onClick={addToCart}><BsCartCheckFill/></button>
+                                  
                                 </div>
                             </div>
                         </div>
