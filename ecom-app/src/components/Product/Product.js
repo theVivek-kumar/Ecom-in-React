@@ -3,18 +3,30 @@ import Navbar from "../Navbar";
 import { FaStar } from "react-icons/fa";
 import { Card } from "../Card/Card";
 import { products } from "../../backend/db/products";
-import { useState } from "react";
-import { useEffect } from "react";
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 import axios from 'axios';
+import { ProductPageContext } from "../../context/productPageContext";
 
 
 
 const Product = () => {
+    const { sort, setSort, rating, setRating, priceRange, setPriceRange, category, setCategory } = useContext(ProductPageContext);
+    const [key, setKey] = useState(0);
+    console.log(rating);
+    console.log(priceRange);
+    console.log(category);
+    function clearFitlters() {
+        setSort(true);
+        setRating(false);
+        setPriceRange(1500);
+        setCategory({ allProducts: true, shirt: false, huddies: false, denim: false, watch: false, });
+        console.log("clicked");
+        setKey(key + 1);
+    }
+    
     
  const [ productListing, setProductListing ] = useState([]);
     console.log(productListing);
-
     useEffect(() => {  
     (async ()=>{
         const response = await axios.get('/api/products');
@@ -50,10 +62,10 @@ const Product = () => {
                     </div>
                     <label className="slider" htmlFor="volume">
                         <input className="input-range"
-                       
-                         type="range" min="500" max="2500" 
-                         />
-                    </label>
+                        onChange={(e) => {setPriceRange(e.target.value)}}
+                                    type="range" min="500" max="2500" 
+                                    value={priceRange} id="volume" /></label>
+                
 
                 </div>
             </div>
