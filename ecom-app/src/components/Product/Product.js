@@ -2,19 +2,20 @@ import React from "react";
 import Navbar from "../Navbar";
 import { FaStar } from "react-icons/fa";
 import { Card } from "../Card/Card";
-import { products } from "../../backend/db/products";
+// import { products } from "../../backend/db/products";
 import { useState, useEffect, useContext } from "react";
 import axios from 'axios';
-import { ProductPageContext } from "../../context/productPageContext";
+import { ProductPageContext } from "./productPageContext";
 
 
 
 const Product = () => {
     const { sort, setSort, rating, setRating, priceRange, setPriceRange, category, setCategory } = useContext(ProductPageContext);
     const [key, setKey] = useState(0);
+    console.log(sort);
     console.log(rating);
     console.log(priceRange);
-    console.log(category);
+    
     function clearFitlters() {
         setSort(true);
         setRating(false);
@@ -23,6 +24,94 @@ const Product = () => {
         console.log("clicked");
         setKey(key + 1);
     }
+    useEffect(() => {
+        (async () => {
+            const response = await axios.get(`api/products`);
+            console.log(response.data);
+            if (response.status === 200) {
+                setProductListing(response.data.products);
+            }
+        })();
+    }, []);
+    async function addToCart(product, setCart) {
+        const response = await axios({
+            method: "post",
+            url: `api/cart/cart`,
+            headers: { authorization: localStorage.getItem('token') },
+            data: {
+            product: product
+        }
+    });
+        console.log(response.data.cart);
+        setCart(response.data.cart);
+
+        async function addToWishlist() {
+            const response = await axios({
+                method: "post",
+                url: `api/wishlist/wishlist`,
+                headers: { authorization: localStorage.getItem('token') },
+                data: {
+                    product: product
+                }
+            });
+            console.log(response.data.wishlist);
+        
+        }
+    }
+    const sortFunction = (productListing, sort) => {
+        const sortedProductListing = [...productListing]
+        if (sort) {
+            return sortedProductListing.sort((a, b) => { a.price.discounted - b.price.discounted });
+        }
+            else {
+                return sortedProductListing.sort((a, b) => { b.price.discounted - a.price.discounted });
+        }
+    }
+
+    const sortedData = sortFunction(productListing, sort);
+    const sortedFunction = (productListing , rating) => {
+        const sortedProductListing = [...productListing];
+        if (rating) {
+            return sortedProductListing.filter(product => product.rating >= rating);
+
+        }
+        else {
+            return sortedProductListing;
+        }
+    }
+
+    const filteredData = ratingFunction(sortedData, rating);
+    const priceRangeFunction = (productListing, priceRange) => {
+        const sortedProductListing = [...productListing];
+        if (priceRange) {
+            return sortedProductListing.filter(product => Number(product.price.discounted) <= Number(priceRange));
+        }
+        else {
+            return sortedProductListing;
+        }
+    }
+    const categoryFunction = (productListing, category) => {
+        const sortedProductListing = [...productListing];
+        if (category.allProducts) {
+            return sortedProductListing;
+        }
+        if (category.shirt) {
+            return sortedProductListing.filter(product => product.category === "shirt");
+        }
+        if (category.huddies) {
+            return sortedProductListing.filter(product => product.category === "huddies");
+        }
+        if (category.denim) {
+            return sortedProductListing.filter(product => product.category === "denim");
+        }
+        if (category.watch) {
+            return sortedProductListing.filter(product => product.category === "watch");
+        }
+        return sortedProductListing;
+    }
+
+
+
     
     
  const [ productListing, setProductListing ] = useState([]);
@@ -73,30 +162,35 @@ const Product = () => {
             <div className="category-section-aside">
                 <h3 className="aside-section-title-md">Categories</h3>
                 <div className="checkbox-input">
-                    <input type="checkbox" 
+                            <input type="checkbox" 
+                                onChange={(e) => {setCategory({...category, allProducts: e.target.checked})}}
                     name="check" className="checkbox"  />
-                    <label htmlFor="check">All Plants</label>
+                    <label htmlFor="check">All fashion</label>
                 </div>
                
                 <div className="checkbox-input">
-                    <input type="checkbox"
-                     name="check" className="checkbox" /><label htmlFor="check"> Air Purifying
-                        Plants</label>
+                            <input type="checkbox"
+                                onChange={(e) => {setCategory({...category, shirt: e.target.checked})}}
+                     name="check" className="checkbox" /><label htmlFor="check"> Shirt
+                             </label>
                 </div>
 
                 <div className="checkbox-input">
-                    <input type="checkbox"
-                     name="check" className="checkbox" /><label htmlFor="check"> Flowering Plants</label>
+                            <input type="checkbox"
+                                onChange={(e) => {setCategory({...category, huddies: e.target.checked})}}
+                     name="check" className="checkbox" /><label htmlFor="check"> Huddies</label>
                 </div>
                 
                 <div className="checkbox-input">
-                    <input type="checkbox" 
-                    name="check" className="checkbox" /><label htmlFor="check"> Indoor Plants</label>
+                            <input type="checkbox" 
+                                onChange={(e) => {setCategory({...category, denim: e.target.checked})}}
+                    name="check" className="checkbox" /><label htmlFor="check"> Denim</label>
                 </div>
 
                 <div className="checkbox-input">
-                    <input type="checkbox"
-                     name="check" className="checkbox" /><label htmlFor="check"> Herb Plants</label>
+                            <input type="checkbox"
+                            onChange={(e) => {setCategory({...category, watch: e.target.checked})}}
+                     name="check" className="checkbox" /><label htmlFor="check"> Watch</label>
                 </div>
             </div>
 
