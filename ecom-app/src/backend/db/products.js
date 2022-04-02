@@ -33,7 +33,7 @@ export const products = [
       discounted: "1500",
     },
      img: "https://m.media-amazon.com/images/I/618Wek95laS._AC_UL480_FMwebp_QL65_.jpg",
-    categoryName: "hoodie",
+    categoryName: "Shirt",
   },
   {
     _id: uuid(),
@@ -46,7 +46,7 @@ export const products = [
       discount: "50%",
       discounted: "1100",
     },
-     img: "https://m.media-amazon.com/images/I/61RqedeafJL._AC_UL480_FMwebp_QL65_.jpg",
+     img: "https://m.media-amazon.com/images/I/81iiPvmfJvL._AC_UL480_FMwebp_QL65_.jpg",
     categoryName: "denim",
   
   },
@@ -61,8 +61,8 @@ export const products = [
       discount: "50%",
       discounted: "600",
     },
-     img: "https://m.media-amazon.com/images/I/81kJzDOwjNL._AC_UL480_FMwebp_QL65_.jpg",
-    categoryName: "Shirt",
+     img: "https://m.media-amazon.com/images/I/81nj6IlZpVL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "watch",
 
   },
   {
@@ -77,7 +77,7 @@ export const products = [
       discounted: "500",
     },
      img: "https://m.media-amazon.com/images/I/61RqedeafJL._AC_UL480_FMwebp_QL65_.jpg",
-    categoryName: "hoodie",
+    categoryName: "Shirt",
 
   },
   //  
@@ -92,8 +92,8 @@ export const products = [
       discount: "20%",
       discounted: "2000",
     },
-     img: "https://m.media-amazon.com/images/I/710k9j2DXaL._AC_UL480_FMwebp_QL65_.jpg",
-    categoryName: "Shirt",
+     img: "https://m.media-amazon.com/images/I/71cT6st-7hL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "watch",
 
   },
   {
@@ -105,10 +105,10 @@ export const products = [
      price: {
       original: "2500",
       discount: "20%",
-      discounted: "1800",
+      discounted: "1034",
     },
-     img: "https://m.media-amazon.com/images/I/61XxnHvE6WL._AC_UL480_FMwebp_QL65_.jpg",
-    categoryName: "hoodie",
+     img: "https://m.media-amazon.com/images/I/71qEG7IZmzL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "watch",
 
   },
   {
@@ -122,8 +122,8 @@ export const products = [
       discount: "20%",
       discounted: "2000",
     },
-     img: "https://m.media-amazon.com/images/I/61RqedeafJL._AC_UL480_FMwebp_QL65_.jpg",
-    categoryName: "hoodie",
+     img: "https://m.media-amazon.com/images/I/81d2cqvIgDL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "denim",
 
   },
   {
@@ -137,10 +137,57 @@ export const products = [
       discount: "20%",
       discounted: "2000",
     },
-     img: "https://m.media-amazon.com/images/I/61zGzJRsgpL._AC_UL480_FMwebp_QL65_.jpg",
+     img: "https://m.media-amazon.com/images/I/61Y9wxRfdRL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "denim",
+
+  },
+  //
+   {
+       _id: uuid(),
+    title: "IndoPrimo",
+    desc: "Men's Slim Fit Casual Shirt",
+     rating: 2.4,
+    inStock: true,
+     price: {
+      original: "3200",
+      discount: "20%",
+      discounted: "1200",
+    },
+     img: "https://m.media-amazon.com/images/I/41ZgLHkOeCL._AC_UL480_QL65_.jpg",
     categoryName: "hoodie",
 
   },
+    {
+       _id: uuid(),
+    title: "IndoPrimo",
+    desc: "Men's Slim Fit Casual Shirt",
+     rating: 2.4,
+    inStock: true,
+     price: {
+      original: "1200",
+      discount: "20%",
+      discounted: "1000",
+    },
+     img: "https://m.media-amazon.com/images/I/71mNmVxJFHL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "hoodie",
+
+  },
+     {
+       _id: uuid(),
+    title: "IndoPrimo",
+    desc: "Men's Slim Fit Casual Shirt",
+     rating: 3.4,
+    inStock: true,
+     price: {
+      original: "1200",
+      discount: "20%",
+      discounted: "1500",
+    },
+     img: "https://m.media-amazon.com/images/I/71fUM-BIiaL._AC_UL480_FMwebp_QL65_.jpg",
+    categoryName: "hoodie",
+
+  },
+
    
   
 

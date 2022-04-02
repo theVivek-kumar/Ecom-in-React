@@ -15,8 +15,8 @@ function Card({ product,addToCart,addToWishlist}) {
                     <p className="card-title desc">{desc}</p>
                 </h1>
                 </div>
-                                <div class="badge-rating">
-                                    3.5  <BsFillStarFill/>
+                                <div class="badge-rating">{rating}
+                                      <BsFillStarFill/>
             </div>
                          <div className='price-discription-container'>
                          <h2 className="card-price orignal">{original}</h2>
@@ -26,10 +26,9 @@ function Card({ product,addToCart,addToWishlist}) {
                          <div className="card-nav">
                             <div className="card-cta-btn">
                                 <button className="btn primary-btn-sm add-cart">Add to Cart</button>
-                                <div className="card-nav-icon">
-                                   <button onClick={addToWishlist}><BsFillStarFill/> </button>
-                                    <button onClick={addToCart}><BsCartCheckFill/></button>
-                                  
+                    <div className="card-nav-icon">
+                                    <button className="btn primary-btn-sm add-cart wishlist">move to Wishlist</button>
+                                   
                                 </div>
                             </div>
                         </div>

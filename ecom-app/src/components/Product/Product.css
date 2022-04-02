@@ -4,6 +4,25 @@
     box-sizing: border-box;
     
 }
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 :root {
     font-family: 'Segoe UI',
         Tahoma,
@@ -37,11 +56,14 @@
 
 /*********************************CARD-VERTICAL***********************/
 .card-vertical {
-    width: 20rem;
+    width: 24rem;
     background-color: var(--font-color);
     padding: 1rem;
     border-radius: 5px;
+    box-shadow: 0px 0px 5px  var(--font-color);
+    max-height: 40rem
 
+;
 }
 
 .flex-row {
@@ -64,7 +86,6 @@
     gap: .5rem;
     font-size: 1.3rem;
     color: #00f4fc;
-    background-color: #183035;
     padding: .5REM;
     border-radius: 2px;
 }
@@ -104,13 +125,22 @@
     border-radius: 5px;
 
 }
+.wishlist{
+    background-color: #202020;
+    color: aliceblue;
+}
 
 .products {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
+    justify-content: center;
     margin-left: 3rem;
     flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: clip;
+    height: calc(100vh - 6.24rem);
+ 
 }
 
 .card-cta-btn {
@@ -144,6 +174,13 @@
     /* max-height: 200%; */
     /*max-width: 25rem;*/
     padding: 2rem 2.5rem;
+    width: auto;
+    overflow-y: auto;
+    overflow-x: clip;
+    height: calc(100vh - 6.24rem);
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
 }
 
 .main-section{
