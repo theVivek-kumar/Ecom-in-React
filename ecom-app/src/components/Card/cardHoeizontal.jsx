@@ -1,9 +1,11 @@
 import React from "react";
-import  Navbar from "../Navbar";
-const CardHorizontal = () => {
+import  Navbar from "../navbar/Navbar";
+const CardHorizontal = ({ product  }) => {
     return (
         <>
-        <Navbar/>
+            <Navbar />
+            
+            
         <div className="home-card-container-md">
         <div className="home-card-Md-body">
             <div className="card-img-Md">

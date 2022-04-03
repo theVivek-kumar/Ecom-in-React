@@ -1,6 +1,9 @@
 import React from 'react';
+import Navbar from '../components/navbar/Navbar';
 const Login = () => {
     return (
+        <>
+        <Navbar/>
          <div className="container-login">
         <div className="login-container-form">
             <div className="login-form-header">
@@ -20,7 +23,8 @@ const Login = () => {
                 <a href="/SignIn/SignIn.html"><h4>Create New Account</h4></a>
             </div>
         </div>
-    </div>
+            </div>
+            </>
 
         
         

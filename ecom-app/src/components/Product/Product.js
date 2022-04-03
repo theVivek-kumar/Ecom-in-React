@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../Navbar";
+import Navbar from "../navbar/Navbar";
 import { FaStar } from "react-icons/fa";
 import { Card } from "../Card/Card";
 //  import { products } from "../../backend/db/products";

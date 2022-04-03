@@ -1,7 +1,8 @@
 import React from 'react';
 import { BsFillStarFill } from "react-icons/bs";
 import { BsCartCheckFill } from "react-icons/bs";
-import {BsShareFill } from "react-icons/bs";
+import { BsShareFill } from "react-icons/bs";
+
 function Card({ product,addToCart,addToWishlist}) {
     const {title, desc, rating, instock,  price:{original, discount, discounted}, categoryName , img} = product;
     return (
@@ -32,7 +33,8 @@ function Card({ product,addToCart,addToWishlist}) {
                                 </div>
                             </div>
                         </div>
-                    </div>
+        </div>
+        
   )
 }
 export { Card };

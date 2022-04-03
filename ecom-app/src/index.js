@@ -5,15 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { makeServer } from "./server";
 import {ProductPageProvider} from "./components/Product/productPageContext";
+import { CartContext, CartProvider } from './components/cartPage/cartContext';
 
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
+    <CartProvider>
     <ProductPageProvider>
       <App />
-    </ProductPageProvider>
+      </ProductPageProvider>
+      </CartProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -3,7 +3,7 @@ import { BsCartCheck } from "react-icons/bs";
 import { BiUser } from "react-icons/bi";
 import { BiHeart } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
-
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,9 +20,9 @@ const Navbar = () => {
         
       </div>
       <div className='navbar-icons'>
-        <BsCartCheck className='icons' />
+        {/* <NavLink to = "/cart"><BsCartCheck className='icons' /></NavLink> */}
         <BiUser className='icons'/>
-        <BiHeart className='icons'/>
+          {/* <NavLink to ="/wishlist"> <BiHeart className='icons'/></NavLink> */}
       </div>
       <div className='seprator'></div>
       <div className='navbar-login-signin'>
@@ -30,7 +30,9 @@ const Navbar = () => {
         <button className='btn-sigin'>SignIn</button>
       </div>
       </div>
+       <div className='seprator'></div>
     </nav >
+
   )
 };
 export default Navbar;
