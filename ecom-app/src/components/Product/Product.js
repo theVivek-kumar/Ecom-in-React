@@ -119,7 +119,8 @@ const Product = () => {
       <aside className="aside-section">
             <div className="aside-section-header">
                 <h3 className="aside-section-title">Filters</h3>
-                <a href="#" className="clear-btn"><button onClick={clearFitlters}>Clear All </button></a>
+                        <a href="#" className="clear-btn"><button className="
+                btn-login" onClick={clearFitlters}>Clear All </button></a>
             </div>
 
             <div className="price-section">
