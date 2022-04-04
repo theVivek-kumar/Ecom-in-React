@@ -18,6 +18,8 @@ import { CartPage } from './components/cartPage/cartPage';
 import LandingPage from './Pages/LandingPage';
 import { Route, Routes } from "react-router-dom";
 import {BrowserRouter} from 'react-router-dom';
+import { Signin } from './components/SignIn/Signin';
+import './components/SignIn/signin.css';
 
 function App() {
   return (
@@ -27,10 +29,8 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/product" element = {<Product/>}/>
         <Route path="/cartPage" element={<CartPage />} />
-          
+        <Route path="/signIn" element={<Signin/>}/>
         </Routes>
-      
-      
     </div>
   );
 }

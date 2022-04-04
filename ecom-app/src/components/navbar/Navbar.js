@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="navbar-md-head">
 
             <div className="navbar-head-logo">
-            <h2 className='navbar-header'>FASHION <span className='navbar-header-heading'> SHOP</span></h2>
+            <NavLink to ="/"><h2 className='navbar-header'>FASHION <span className='navbar-header-heading'> SHOP</span></h2></NavLink>
       </div>
       
       <div className='navbar-searchbox-container'>
@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className='seprator'></div>
       <div className='navbar-login-signin'>
         <NavLink to ="/login"><button className='btn-login'>LogIn</button></NavLink>
-        <button className='btn-sigin'>SignIn</button>
+        <NavLink to ="/signIn"> <button className='btn-sigin'>SignIn</button></NavLink>
       </div>
       </div>
        <div className='seprator'></div>

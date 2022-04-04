@@ -4,6 +4,9 @@
     box-sizing: border-box;
 
 }
+body{
+    background-color: darkslategray;
+}
 
 .login-container-form {
     display: flex;

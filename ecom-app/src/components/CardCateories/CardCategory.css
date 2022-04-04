@@ -18,10 +18,10 @@ body{
      display: flex;
      font-size: 1.8rem;
      flex-direction: column;
-     gap: 1rem;
+     gap: 2rem;
      justify-content: center;
      align-items: center;
-     width: 35rem;
+     width: 33rem;
      border: 1px solid var(--font-color-cta);
      border-radius: 10px;
      padding: 3rem;    
