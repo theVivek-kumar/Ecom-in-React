@@ -17,6 +17,7 @@ import './components/Product/Product.css';
 import { CartPage } from './components/cartPage/cartPage';
 import LandingPage from './Pages/LandingPage';
 import { Route, Routes } from "react-router-dom";
+import {BrowserRouter} from 'react-router-dom';
 
 function App() {
   return (
