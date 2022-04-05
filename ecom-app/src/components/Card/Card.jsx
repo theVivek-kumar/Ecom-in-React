@@ -28,7 +28,7 @@ function Card({ product,addToCart,addToWishlist}) {
                             <div className="card-cta-btn">
                                 <button className="btn primary-btn-sm add-cart">Add to Cart</button>
                     <div className="card-nav-icon">
-                                    <button className="btn primary-btn-sm add-cart wishlist">move to Wishlist</button>
+                        <button className="btn primary-btn-sm add-cart wishlist">Move to Wishlist</button>
                                    
                                 </div>
                             </div>

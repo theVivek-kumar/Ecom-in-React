@@ -23,27 +23,26 @@ const wishListpage = () => {
                 }
             })();
         }, []);  
-    
-
-
-
     return (
         <>
             <Navbar />
             <div className='wishlist-section-md'>
                 <div className='wishLst-container'>
                     <h2 className='wishlist-title'>My <span>Wish</span></h2>
-                </div>
-                <div className=' wishList'
+                    </div>
+                 <div className=' wishList-items-add'>
+                 <div className='wishlist-header'>      
+                 </div>
+                    {
+                        wishlist.map(item => (<Card key={item._id} product={item}
+                            addToCart={() => addToCart(item, setCart)}
+                            addToWishlist={()=>removeFromWishlist(item._id,setwishlist)}
+                            />))
+                    }
+                 </div>
                 
          </div>
-        
-        
-        
-        
-        
         </>
-   
   )
 }
 
