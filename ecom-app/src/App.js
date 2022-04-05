@@ -20,16 +20,18 @@ import { Route, Routes } from "react-router-dom";
 import {BrowserRouter} from 'react-router-dom';
 import { Signin } from './components/SignIn/Signin';
 import './components/SignIn/signin.css';
+import { wishListpage } from './Pages/WishListpage';
 
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/Login" element={<Login />} />
-        <Route path="/product" element = {<Product/>}/>
-        <Route path="/cartPage" element={<CartPage />} />
-        <Route path="/signIn" element={<Signin/>}/>
+          <Route path="/Login" element={<Login />} />
+           <Route path="/product" element = {<Product/>}/>
+            <Route path="/cartPage" element={<CartPage />} />
+           <Route path="/signIn" element={<Signin />} />
+          <Route path="/wishList" element={<wishListpage/>} />
         </Routes>
     </div>
   );

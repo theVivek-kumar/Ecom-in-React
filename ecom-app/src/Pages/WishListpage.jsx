@@ -25,7 +25,7 @@ const wishListpage = () => {
         }, []);  
     return (
         <>
-            <Navbar />
+            <Navbar/>
             <div className='wishlist-section-md'>
                 <div className='wishLst-container'>
                     <h2 className='wishlist-title'>My <span>Wish</span></h2>
