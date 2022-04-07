@@ -7,6 +7,9 @@
   height: 4px;
   background-color: rgb(0, 162, 255);
 }
-
+.cart-section-card{
+  display: flex;
+  flex-wrap: wrap;
+}
 
  

@@ -36,7 +36,7 @@ const CartPage = () => {
             <Navbar />
             <h3 className="cart-heading-my-cart"> My Cart </h3>
             <section className="cart-section">
-                <div>
+                <div className="cart-section-card ">
                     {
                         cart.map(item => (<Card product={item} addToCart={() => { }}
                             addToWishlist={() => { }} />))}
