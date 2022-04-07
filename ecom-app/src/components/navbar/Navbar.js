@@ -21,8 +21,8 @@ const Navbar = () => {
       </div>
       <div className='navbar-icons'>
         {/* <NavLink to = "/cart"><BsCartCheck className='icons' /></NavLink> */}
-         <NavLink to ="/Cartpage"><BiHeart className='icons' /></NavLink> 
-          <NavLink to ="/wishList "><BsCartCheck className='icons'/></NavLink>
+         <NavLink to ="/Cartpage"><BsCartCheck className='icons' /></NavLink> 
+          <NavLink to ="/wishList "><BiHeart className='icons'/></NavLink>
           {/* <NavLink to ="/wishlist"> <BiHeart className='icons'/></NavLink> */}
       </div>
       <div className='seprator'></div>

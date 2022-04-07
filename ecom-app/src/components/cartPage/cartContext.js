@@ -4,7 +4,6 @@ import axios from 'axios';
 const CartContext = createContext();
 const CartProvider = ({ children }) => {
     const [cart, setCart] = useState([]);
-    const [total, setTotal] = useState(0);
     const addToCart = async (item, setCart) => {
         try {
             const response = await axios.post('/api/user/cart/', { product: item }, {
@@ -24,7 +23,7 @@ const CartProvider = ({ children }) => {
         }
     };
     return (
-        <CartContext.Provider value={{ cart, setCart, total, setTotal, addToCart }}>
+        <CartContext.Provider value={{ cart, setCart, addToCart }}>
             {children}
         </CartContext.Provider>
     );

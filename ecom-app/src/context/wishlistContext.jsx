@@ -5,24 +5,25 @@ const WishListContext = createContext();
 
 const WishListProvider = ({ children }) => {
 
-    const [wishlist, setwishlist] = useState([]);
+    const [wishList, setwishList] = useState([]);
     
 
-async function removeFromWishlist(ProducdId, setwishList) {
+async function removeFromWishList(productId , setwishList) {
     const response = await axios({
         method: 'delete',
-        url: 'api/user/wishlist/${productId}',
+        url: `api/user/wishlist/${productId}`,
         headers: {
             authorization: localStorage.getItem("token"),
         
         },
     })
-    setwishlist (response.data.wishList);
-}
-async function addTowWishList(product, setwishList) {
+    setwishList (response.data.wishlist);
+    }
+    
+   async function addToWishList(product, setwishList) {
     const response = await axios({
         method: 'post',
-        url: '/api/user/wishlist',
+        url: `/api/user/wishlist`,
         headers: {
             authorization: localStorage.getItem('token')
         },
@@ -30,9 +31,12 @@ async function addTowWishList(product, setwishList) {
             product: product
         }
     });
+       setwishList(response.data.wishlist)
+       console.log("add into wish");
+       console.log(response.data.wishlist)
 }
     return (
-        <WishListContext.Provider value={{ wishlist, setwishlist, removeFromWishlist, addTowWishList }}>
+        <WishListContext.Provider value={{ wishList, setwishList, removeFromWishList, addToWishList }}>
             {children}
         </WishListContext.Provider>
     )

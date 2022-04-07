@@ -3,7 +3,7 @@ import { BsFillStarFill } from "react-icons/bs";
 import { BsCartCheckFill } from "react-icons/bs";
 import { BsShareFill } from "react-icons/bs";
 
-function Card({ product,addToCart,addToWishlist}) {
+function Card({ product,addToCart,addToWishList}) {
     const {title, desc, rating, instock,  price:{original, discount, discounted}, categoryName , img} = product;
     return (
       
@@ -26,9 +26,11 @@ function Card({ product,addToCart,addToWishlist}) {
                          </div>
                          <div className="card-nav">
                             <div className="card-cta-btn">
-                                <button className="btn primary-btn-sm add-cart">Add to Cart</button>
+                                <button onClick={addToCart} className="btn primary-btn-sm add-cart">Add to Cart</button>
                     <div className="card-nav-icon">
-                        <button className="btn primary-btn-sm add-cart wishlist">Move to Wishlist</button>
+                        <button
+                            onClick={addToWishList}
+                            className="btn primary-btn-sm add-cart wishlist">Move to Wishlist</button>
                                    
                                 </div>
                             </div>

@@ -1,4 +1,4 @@
-import { CardHorizontal } from "../Card/cardHoeizontal";
+import { Card } from "../Card/Card";
 import Navbar from "../navbar/Navbar";
 import { CartContext } from "./cartContext";
 import { useContext, useEffect } from "react";
@@ -34,8 +34,8 @@ const CartPage = () => {
     return (
         <>
             <Navbar />
-            <h3 className="cart-heading-my-cart"> My Cart </h3>
-            <section className="cart-section">
+            <h3 className="cart-heading-my-cart" style={{ color: "white",fontSize:"3rem" } }>My<span style={{color:"#f5ac2c"}}>-Cart</span> </h3>
+            <section className="cart-section-cart-view">
                 <div>
                     {
                         cart.map(item => (<Card product={item} addToCart={() => { }}

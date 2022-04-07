@@ -6,6 +6,8 @@ import { Card } from "../Card/Card";
 import { useState, useEffect, useContext } from "react";
 import axios from 'axios';
 import { ProductPageContext } from "./productPageContext";
+import { CartContext } from "../cartPage/cartContext";
+import { WishListContext } from "../../context/wishlistContext";
 
 
 
@@ -13,6 +15,9 @@ const Product = () => {
     const { sort, setSort, rating, setRating, priceRange, setPriceRange, categoryName, setcategoryName } = useContext(ProductPageContext);
     const [key, setKey] = useState(0); 
     const [productListing, setProductListing] = useState([]);
+    const { addToCart, cart } = useContext(CartContext);
+    const { addToWishList, wishList ,setwishList} = useContext(WishListContext);
+
     
     
     function clearFitlters() {
@@ -109,7 +114,9 @@ const Product = () => {
        }
     })();
     }, [])
-    console.log(productListing);
+    console.log("ccccccccccc",productListing);
+  
+
     return (
         <>
             <Navbar/>
@@ -257,8 +264,8 @@ const Product = () => {
                         
                         {/* {productListing.map(product => (<Card key={product._id} product={product}/>))} */}
                         {filteredcategoryNameData.map(product => (<Card key={product._id} product={product}
-                            clickhandler1={() => { }}
-                            clickHandler2={() => { }}
+                            addToCart={() => addToCart(product, product._id)}
+                            addToWishList={() => addToWishList (product,setwishList)}
                         />))}
                       
                     

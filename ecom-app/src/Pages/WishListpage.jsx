@@ -7,43 +7,46 @@ import { CartContext } from '../components/cartPage/cartContext';
 import { Card } from '../components/Card/Card';
 
 
-const wishListpage = () => {
-    const { wishlist, setwishlist, removeFromWishlist, addTowWishList } = useState(WishListContext);
-    const { cart, setCart, addToCart } = useState(CartContext);
+const WishListpage = () => {
+    const { wishList, setwishList, removeFromWishlist, addToWishList } = useContext(WishListContext);
+    const { cart, setCart, addToCart } = useContext(CartContext);
 
     useEffect( () => {
             (async () => {
-                const response = axios({
+                const response = await axios({
                     method: 'get',
-                    url: "/api/user/wishlist",
+                    url: `/api/user/wishlist`,
                     headers: { authorization: localStorage.getItem('token') },
                 });
-                if ((await response).status === 200) {
-                    setwishlist((await response).data.wishlist);
+                if ( response.status === 200) {
+                    setwishList( response.data.wishlist);
                 }
             })();
-        }, []);  
+    }, []);
+    console.log("uuuuuuuuuuuuuuuuu", wishList);
     return (
         <>
-            <Navbar/>
-            <div className='wishlist-section-md'>
+            <Navbar />
+            
+            { <div className='wishlist-section-md'>
                 <div className='wishLst-container'>
-                    <h2 className='wishlist-title'>My <span>Wish</span></h2>
+                    <h2 className='wishlist-title' style={{
+                        color:"white",fontSize:"3rem"}}>My<span style={{color:"#f5ac2c"}}>-Wishlist</span></h2>
                     </div>
                  <div className=' wishList-items-add'>
                  <div className='wishlist-header'>      
                  </div>
                     {
-                        wishlist.map(item => (<Card key={item._id} product={item}
+                        wishList.map(item => (<Card key={item._id} product={item}
                             addToCart={() => addToCart(item, setCart)}
-                            addToWishlist={()=>removeFromWishlist(item._id,setwishlist)}
+                            addToWishList={()=>removeFromWishList(item._id, setwishList)}
                             />))
                     }
                  </div>
                 
-         </div>
+         </div> }
         </>
   )
 }
 
-export { wishListpage };
+export { WishListpage };

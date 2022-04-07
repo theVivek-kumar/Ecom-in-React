@@ -20,7 +20,7 @@ import { Route, Routes } from "react-router-dom";
 import {BrowserRouter} from 'react-router-dom';
 import { Signin } from './components/SignIn/Signin';
 import './components/SignIn/signin.css';
-import { wishListpage } from './Pages/WishListpage';
+import { WishListpage } from './Pages/WishListpage';
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
            <Route path="/product" element = {<Product/>}/>
             <Route path="/cartPage" element={<CartPage />} />
            <Route path="/signIn" element={<Signin />} />
-          <Route path="/wishList" element={<wishListpage/>} />
+          <Route path="/wishList" element={<WishListpage/>} />
         </Routes>
     </div>
   );

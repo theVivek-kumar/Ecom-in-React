@@ -6,6 +6,18 @@
   height: 4px;
   background-color: rgb(0, 162, 255);
 }
+.wishList-items-add{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+   margin: 5rem;
+}
+.cart-section-cart-view{
+  margin: 5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 
+}
 
  
