@@ -10,14 +10,22 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-   margin: 5rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+  min-width: 35rem;
 }
 .cart-section-cart-view{
   margin: 5rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
+ 
 
 }
+.cart-section-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+   min-width: 35rem;
+}
 
- 
