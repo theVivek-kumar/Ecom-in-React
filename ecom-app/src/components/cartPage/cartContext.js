@@ -11,9 +11,7 @@ const CartProvider = ({ children }) => {
                     authorization: localStorage.getItem('token'),
                 },
             }
-            
-            );
-              
+            );  
             console.log(response.data);
             if (response.status === 200) {
                 setCart(response.data.cart);
