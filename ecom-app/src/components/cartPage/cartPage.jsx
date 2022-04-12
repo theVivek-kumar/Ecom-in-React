@@ -3,10 +3,15 @@ import Navbar from "../navbar/Navbar";
 import { CartContext } from "./cartContext";
 import { useContext, useEffect } from "react";
 import axios from "axios";
+import { CardHorizontal } from "../Card/cardHorizontal";
+import { WishListContext } from "../../context/wishlistContext";
+import Cartprice from "../cartprice";
 
 const CartPage = () => {
     
-    const { cart, setCart } = useContext(CartContext);
+    const { cart, setCart, addToCart, changeCartQty, removeFromCart } = useContext(CartContext);
+    const { addToWishList} = useContext(WishListContext)
+    
     useEffect(() => {
         (async () => {
             const response = await axios({
@@ -22,15 +27,15 @@ const CartPage = () => {
         })();
     }, []);
 
-    async function removeFromCart(productId) {
-        const response = await axios({
-            method: "delete",
-            url: "/api/user/cart",
-            headers: {
-                authorization: localStorage.getItem('token'),
-            },
-        })
-    }
+    // // async function removeFromCart(productId) {
+    //     const response = await axios({
+    //         method: "delete",
+    //         url: "/api/user/cart",
+    //         headers: {
+    //             authorization: localStorage.getItem('token'),
+    //         },
+    //     })
+    // // }
     return (
         <>
             <Navbar />
@@ -38,11 +43,12 @@ const CartPage = () => {
             <section className="cart-section-cart-view">
                 <div className="cart-section-card">
                     {
-                        cart.map(item => (<Card product={item} addToCart={() => { }}
-                            addToWishlist={() => { }} />))}
+                        cart.map(item => (< CardHorizontal product={item} removeFromCart={() =>removeFromCart }
+                            addToWishlist={() => addToWishList } />))}
                     
 
                 </div>
+                <Cartprice/>
                 
             </section>
         </>

@@ -33,7 +33,7 @@ function App() {
            <Route path="/signIn" element={<Signin />} />
           <Route path="/wishList" element={<WishListpage/>} />
         </Routes>
-    </div>
+      </div>
   );
 }
 

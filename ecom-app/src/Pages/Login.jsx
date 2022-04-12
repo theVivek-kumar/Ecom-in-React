@@ -1,5 +1,7 @@
 import React from 'react';
+import { CardHorizontal } from '../components/Card/cardHorizontal';
 import Navbar from '../components/navbar/Navbar';
+
 const Login = () => {
     return (
         <>
@@ -23,7 +25,9 @@ const Login = () => {
               <a href="/SignIn/SignIn.html"><h4>Create New Account</h4></a>
               </div>
               </div>
-              </div>
+        </div>
+        <CardHorizontal/>
+        
               </>
 
         

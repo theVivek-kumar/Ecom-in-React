@@ -23,7 +23,7 @@ const WishListpage = () => {
                 }
             })();
     }, []);
-    console.log("uuuuuuuuuuuuuuuuu", wishList);
+    // console.log("uuuuuuuuuuuuuuuuu", wishList);
     return (
         <>
             <Navbar />
@@ -39,7 +39,7 @@ const WishListpage = () => {
                     {
                         wishList.map(item => (<Card key={item._id} product={item}
                             addToCart={() => addToCart(item, setCart)}
-                            addToWishList={()=>removeFromWishList(item._id, setwishList)}
+                            addToWishList={()=>removeFromWishlist(item._id, setwishList)}
                             />))
                     }
                  </div>

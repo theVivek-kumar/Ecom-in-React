@@ -17,7 +17,8 @@ async function removeFromWishList(productId , setwishList) {
         
         },
     })
-    setwishList (response.data.wishlist);
+    setwishList(response.data.wishlist);
+    console.log("item in my wwishlist", wishlist)
     }
     
    async function addToWishList(product, setwishList) {

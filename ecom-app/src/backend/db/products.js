@@ -8,7 +8,8 @@ import { v4 as uuid } from "uuid";
 
 export const products = [
   {
-       _id: uuid(),
+    _id: uuid(),
+    qty:1,
     title: "IndoPrimo",
     desc: "Men's Checkered Slim fit Casual Shirt",
      rating: 2.7,
@@ -23,6 +24,7 @@ export const products = [
   },
   {
     _id: uuid(),
+      qty:1,
     title: "Dennis Lingo",
     desc: "Men's Classic Collar Casual Shirt",
      rating: 3.4,
@@ -37,6 +39,7 @@ export const products = [
   },
   {
     _id: uuid(),
+      qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 5.0,
@@ -51,7 +54,8 @@ export const products = [
   
   },
   {
-       _id: uuid(),
+    _id: uuid(),
+      qty:1,
     title: "Amazon Brand - ",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 4.0,
@@ -66,7 +70,8 @@ export const products = [
 
   },
   {
-       _id: uuid(),
+    _id: uuid(),
+      qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 3.4,
@@ -82,7 +87,8 @@ export const products = [
   },
   //  
   {
-       _id: uuid(),
+    _id: uuid(),
+      qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 2.4,
@@ -97,7 +103,8 @@ export const products = [
 
   },
   {
-       _id: uuid(),
+    _id: uuid(),
+      qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 2.4,
@@ -112,7 +119,8 @@ export const products = [
 
   },
   {
-       _id: uuid(),
+    _id: uuid(),
+      qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 2.4,
@@ -127,7 +135,8 @@ export const products = [
 
   },
   {
-       _id: uuid(),
+    _id: uuid(),
+      qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 2.4,
@@ -143,7 +152,8 @@ export const products = [
   },
   //
    {
-       _id: uuid(),
+     _id: uuid(),
+       qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 2.4,
@@ -158,7 +168,8 @@ export const products = [
 
   },
     {
-       _id: uuid(),
+      _id: uuid(),
+        qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 2.4,
@@ -174,6 +185,7 @@ export const products = [
   },
      {
        _id: uuid(),
+         qty:1,
     title: "IndoPrimo",
     desc: "Men's Slim Fit Casual Shirt",
      rating: 3.4,
