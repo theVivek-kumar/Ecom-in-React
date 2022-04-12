@@ -8,7 +8,7 @@ import { Card } from '../components/Card/Card';
 
 
 const WishListpage = () => {
-    const { wishList, setwishList, removeFromWishlist, addToWishList } = useContext(WishListContext);
+    const { wishList, setwishList, removeFromWishList, addToWishList } = useContext(WishListContext);
     const { cart, setCart, addToCart } = useContext(CartContext);
 
     useEffect( () => {
@@ -38,8 +38,8 @@ const WishListpage = () => {
                  </div>
                     {
                         wishList.map(item => (<Card key={item._id} product={item}
-                            addToCart={() => addToCart(item, setCart)}
-                            addToWishList={()=>removeFromWishlist(item._id, setwishList)}
+                            addToCart={()=>addToCart(item, setCart)}
+                            addToWishList={()=>removeFromWishList(item._id, setwishList)}
                             />))
                     }
                  </div>

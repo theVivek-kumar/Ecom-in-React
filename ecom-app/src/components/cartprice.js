@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card/Card.css';
 
-function Cartprice() {
+function Cartprice({ qty, price, discountPrice, totalPrice }) {
   return (
      <div className="second-card">
             
@@ -14,23 +14,23 @@ function Cartprice() {
                     <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet. . </p>
                 </div>
                 <div className="discount-chart">
-                    <h4>Price(2 items)</h4>
-                    <h4>$568</h4>
+                    <h4>Price({qty} items)</h4>
+                  <h4>{price}</h4>
                     
                 </div>
                 <div className="discount-chart">
                     <h4>Discount</h4>
-                    <h4>-$89</h4>
+                  <h4>{discountPrice}</h4>
                 
                 </div>
                 <div className="discount-chart">
                     <h4>Dilivery Charge</h4>
-                    <h4>$5</h4>
+                    <h4>$50</h4>
                 
                 </div>
                 <div className="discount-chart">
                     <h4>Total Amount</h4>
-                    <h4>$484</h4>
+                  <h4>{totalPrice}</h4>
                 
                 </div>
                 <div className="discount-chart">

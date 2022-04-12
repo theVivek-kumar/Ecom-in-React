@@ -11,17 +11,20 @@ const WishListProvider = ({ children }) => {
 async function removeFromWishList(productId , setwishList) {
     const response = await axios({
         method: 'delete',
-        url: `api/user/wishlist/${productId}`,
+        url: `/api/user/wishlist/${productId}`,
         headers: {
             authorization: localStorage.getItem("token"),
         
         },
     })
     setwishList(response.data.wishlist);
-    console.log("item in my wwishlist", wishlist)
+    console.log("remove from wishlist", wishList)
     }
     
-   async function addToWishList(product, setwishList) {
+    async function addToWishList(product, setwishList) {
+        if(wishList.find((element) => element._id === product._id )){
+            return console.log("already in wishlist")
+        }
     const response = await axios({
         method: 'post',
         url: `/api/user/wishlist`,

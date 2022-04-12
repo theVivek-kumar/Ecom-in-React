@@ -33,9 +33,9 @@ const CardHorizontal = ({ product, addToWishList, removeFromCart }) => {
                 <div className="card--delivery--msg">FREE delivery on orders over $ 99 </div>
                 
                 <div className="items-quantity">
-                    <button onClick = {changeCartQty ('increment',product._id)}><BsPlusCircle/></button>
+                     <button onClick = {()=>changeCartQty ('increment',product._id)}><BsPlusCircle/></button> 
                             <div className="number">{qty}</div>
-                    <button onClick={changeCartQty("decrement",product._id)} ><FiMinusCircle/></button>
+                    <button onClick={()=>changeCartQty("decrement",product._id)} ><FiMinusCircle/></button> 
                 </div>
                 <div className="card-para-md">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum reiciendis. Lorem ipsum dolor sit amet.
@@ -44,11 +44,11 @@ const CardHorizontal = ({ product, addToWishList, removeFromCart }) => {
                 
 
                 <div className="card-heading-md-2">
-                    <button onClick={()=>removeFromCart}>Remove From cart</button>
+                    <button onClick={removeFromCart}>Remove From cart</button>
                 </div>
                 
                 <div className="card-heading-md-2">
-                    <button onClick={()=>addToWishList}>Move to wishlist</button>
+                    <button onClick={addToWishList}>Move to wishlist</button>
                 </div>
                
             </div>

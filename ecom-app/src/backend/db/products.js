@@ -193,7 +193,7 @@ export const products = [
      price: {
       original: "1200",
       discount: "20%",
-      discounted: "1500",
+      discounted: "500",
     },
      img: "https://m.media-amazon.com/images/I/71fUM-BIiaL._AC_UL480_FMwebp_QL65_.jpg",
     categoryName: "hoodie",

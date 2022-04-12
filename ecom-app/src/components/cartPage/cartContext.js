@@ -50,6 +50,9 @@ const CartProvider = ({ children }) => {
     }
 
     const addToCart = async (item, setCart) => {
+         if( (cart.find((element) => element._id === item._id))) {
+        return 
+      }
         try {
             const response = await axios.post('/api/user/cart/', { product: item }, {
                 headers: {
