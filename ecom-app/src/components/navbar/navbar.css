@@ -24,7 +24,8 @@
 
 .navbar-md-head{
     display: flex;
-    height: 5rem;
+    min-height:6rem ;
+    max-height: 15rem;
     justify-content: space-around;
     align-items: center;
     align-content: center;
@@ -34,7 +35,7 @@
     
 }
 .navbar-header{
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--font-color-cta-Primery);
     font-family: monospace;
     font-weight: 500;
@@ -54,24 +55,30 @@
 }
 .search-icon {
   
-    font-size: 2rem;
+    font-size: 2.5rem;
     display: flex;
     margin-left: 1rem;
     color: rgb(34, 34, 34);
     background-color: rgb(255, 255, 255);
     align-items: center;
+    font-weight: 500;
     border-radius: 4px;
     padding-right:1px ;
 }
 .icons{
     color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+
 }
 .search-input{
     border-radius: 3px;
     border: none;
-    width: 28rem;
-    height: 2.5rem;
+    width: 35rem;
+    height: 3rem;
+    font-family:sans-serif;
     background-color: rgb(255, 255, 255);
+    color: rgb(21, 21, 21);
+    font-weight: 500;
 }
 .search-input :focus{
     border: none;

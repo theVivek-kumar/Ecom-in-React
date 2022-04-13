@@ -18,7 +18,7 @@ function Card({ product,addToCart,addToWishList}) {
                 </div>
                                 <div class="badge-rating">{rating}
                                       <BsFillStarFill/>
-            </div>
+                                 </div>
                          <div className='price-discription-container'>
                          <h2 className="card-price orignal">{original}</h2>
                          <h2 className="card-price discount">{discount}</h2>

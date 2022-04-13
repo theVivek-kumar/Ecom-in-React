@@ -15,7 +15,7 @@ const Navbar = () => {
       </div>
       
       <div className='navbar-searchbox-container'>
-          <input className='search-input' placeholder=' Search for procuct,and more...'  ></input> <div className='search-icon'><BiSearch className='search-icon' />
+          <input className='search-input' placeholder='    Search for procuct,and more...'  ></input> <div className='search-icon'><BiSearch className='search-icon' />
           </div>
         
       </div>

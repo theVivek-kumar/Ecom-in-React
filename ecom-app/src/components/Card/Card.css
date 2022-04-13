@@ -1,4 +1,4 @@
-.navbar-md-head {
+/* .navbar-md-head {
     display: flex;
     justify-content: space-around;
     background-color: var(--PRIMERY-color);
@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     height: auto;
 
-}
+} */
 .navbar-head-logo a{
     text-decoration: none;
     color: #ece9f2;
@@ -17,6 +17,9 @@
     justify-content: space-around;
 
 
+}
+.cart-page-container-md{
+    display: flex;
 }
 
 .fa-search {
@@ -149,10 +152,11 @@
      background-color: #ffffff;
      display: flex;
      width: 24%;
-     height: auto;
+     max-height: 25rem ;
      box-shadow: 0px 0px 10px #868585;
      padding: .8rem;
      margin: 1rem;
+     border-radius: 5px;
 
 }
 .discount-chart{
@@ -161,4 +165,10 @@
 }
 .discount-chart h5{
     color: blue;
+}
+.cart-heading-my-cart{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
 }

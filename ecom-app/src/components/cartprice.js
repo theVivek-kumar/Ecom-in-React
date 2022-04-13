@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card/Card.css';
 
-function Cartprice({ qty, price, discountPrice, totalPrice }) {
+function Cartprice({ qty, price, discountPrice, totalPrice ,title}) {
   return (
      <div className="second-card">
             
@@ -9,7 +9,7 @@ function Cartprice({ qty, price, discountPrice, totalPrice }) {
                 <div className="card-heading-md">
                     <h2>PRICE DETAILS</h2>
                 </div>
-               
+                <h1 className="card-title title">{title}</h1>
                 <div className="card-para-md">
                     <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet. . </p>
                 </div>
@@ -49,4 +49,4 @@ function Cartprice({ qty, price, discountPrice, totalPrice }) {
   )
 }
 
-export default Cartprice
+export { Cartprice };

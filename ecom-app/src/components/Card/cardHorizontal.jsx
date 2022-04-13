@@ -2,7 +2,8 @@ import React, { createContext, useContext } from "react";
 import Navbar from "../navbar/Navbar";
 import { Card } from "./Card.css";
 import { BsPlusCircle } from "react-icons/bs";
-import {FiMinusCircle } from "react-icons/fi";
+import { FiMinusCircle } from "react-icons/fi";
+import { BsFillStarFill } from "react-icons/bs";
 import { Cardcategory } from "../CardCateories/CardCategory";
 import { CartContext } from "../cartPage/cartContext";
 import Cartprice from "../cartprice";
@@ -14,7 +15,7 @@ const CardHorizontal = ({ product, addToWishList, removeFromCart }) => {
     
     
     //  ({ product,addToCart,addToWishList}) {
-    const {qty, desc, rating, instock,  price:{original, discount, discounted}, categoryName , img} = product;
+    const {title,qty, desc, rating, instock,  price:{original, discount, discounted}, categoryName , img} = product;
     return (
         <>
            
@@ -30,25 +31,29 @@ const CardHorizontal = ({ product, addToWishList, removeFromCart }) => {
                 </div>
                
                 
-                <div className="card--delivery--msg">FREE delivery on orders over $ 99 </div>
+                {/* <div className="card--delivery--msg">FREE delivery on orders over $ 99 </div> */}
                 
                 <div className="items-quantity">
                      <button onClick = {()=>changeCartQty ('increment',product._id)}><BsPlusCircle/></button> 
                             <div className="number">{qty}</div>
                     <button onClick={()=>changeCartQty("decrement",product._id)} ><FiMinusCircle/></button> 
                 </div>
-                <div className="card-para-md">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum reiciendis. Lorem ipsum dolor sit amet.
-                       .</p>
-                </div>
+                  <div class="badge-rating">{rating}
+                                      <BsFillStarFill/>
+                                 </div>
+                         <div className='price-discription-container'>
+                         <h2 className="card-price orignal">{original}</h2>
+                         <h2 className="card-price discount">{discount}</h2>
+                         <h2 className="card-price discounted">{discounted}</h2>
+                         </div>
                 
 
                 <div className="card-heading-md-2">
-                    <button onClick={removeFromCart}>Remove From cart</button>
+                    <button className="card-heading-md-1" onClick={removeFromCart}>Remove From cart</button>
                 </div>
                 
                 <div className="card-heading-md-2">
-                    <button onClick={addToWishList}>Move to wishlist</button>
+                    <button className="card-heading-md-1" onClick={addToWishList}>Move to wishlist</button>
                 </div>
                
             </div>

@@ -114,7 +114,7 @@ const Product = () => {
        }
     })();
     }, [])
-    console.log("ccccccccccc",productListing);
+    console.log("click",productListing);
   
 
     return (

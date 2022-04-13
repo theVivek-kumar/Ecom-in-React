@@ -5,6 +5,8 @@ import { WishListContext } from '../context/wishlistContext';
 import axios from 'axios';
 import { CartContext } from '../components/cartPage/cartContext';
 import { Card } from '../components/Card/Card';
+import { CartPage } from '../components/cartPage/cartPage';
+import { Cartprice } from '../components/cartprice';
 
 
 const WishListpage = () => {
@@ -44,8 +46,13 @@ const WishListpage = () => {
                     }
                  </div>
                 
-         </div> }
+            </div>}
+             {
+                    // cart.length === 0 ? <div className="cart-heading-my-cart"><h3 style={{ color: "white",fontSize:"4rem" } }>Your WishList is<span style={{color:"#f5ac2c"}}>-Empty</span> </h3></div> : <Cartprice qty={quantity} price={price} discountPrice={discountedPrice} totalPrice={totalPrice}/>
+                    
+                }
         </>
+    
   )
 }
 
