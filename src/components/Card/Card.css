@@ -1,0 +1,174 @@
+/* .navbar-md-head {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--PRIMERY-color);
+    width: auto;
+    flex-wrap: wrap;
+    height: auto;
+
+} */
+.navbar-head-logo a{
+    text-decoration: none;
+    color: #ece9f2;
+}
+
+.navbar-icons {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.cart-page-container-md{
+    display: flex;
+}
+
+.fa-search {
+    padding: 4px;
+    font-size: 1.6rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(95, 95, 95);
+}
+
+.navbar-head-logo {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-login-btn {
+    background-color: rgb(255, 196, 1);
+    padding: .5rem;
+    color: #312546;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: .3rem;
+    width: 8%;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: .6rem;
+}
+
+.navbar-input-search {
+    align-items: center;
+    display: flex;
+}
+
+.input-text-navbar {
+    border: 1px solid rgb(255, 255, 255);
+    padding: .5rem;
+    width: 25rem;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.fa-cart-arrow-down {
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: white;
+}
+
+.fa-heart {
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: red;
+}
+
+.search-button {
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+
+}
+/****************************card**********************************/
+.home-card-Md-body {
+    background-color: #ffffff;
+    display: flex;
+    width: 40%;
+    box-shadow: 0px 0px 10px #868585;
+    padding: .3rem;
+    margin: 1rem;
+
+}
+
+.card-side {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.home-card-container-md {
+
+    display: flex;
+    justify-content: center;
+}
+
+.image-card {
+    width: 80%;
+    height: auto;
+    border-radius: .2rem;
+    margin-left: .3rem;
+}
+
+.card-heading-md-2 {
+    margin-top: 1rem;
+    font-weight: bolder;
+    background-color: #ff9900;
+    padding: .3rem;
+    display: flex;
+    justify-content: center;
+
+}
+.card--delivery--msg {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-para-md {
+    margin-top: 1rem;
+}
+.mycart-heading{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.items-quantity{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .1rem;
+
+}
+.number{
+    border: 1px solid gray;
+    width: 2rem;
+    border-radius: .3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+}
+.second-card{
+     background-color: #ffffff;
+     display: flex;
+     width: 24%;
+     max-height: 25rem ;
+     box-shadow: 0px 0px 10px #868585;
+     padding: .8rem;
+     margin: 1rem;
+     border-radius: 5px;
+
+}
+.discount-chart{
+    display: flex;
+    justify-content: space-between;
+}
+.discount-chart h5{
+    color: blue;
+}
+.cart-heading-my-cart{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+}

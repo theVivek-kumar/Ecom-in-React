@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 2px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+:root {
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+    --font-color: #282a36;
+    --BACKGROUND-color: #f39494;
+    /* --PRIMERY-color: rgb(12, 109, 165); */
+    --SECONDERY-color: #fe9900;
+    --FOOTER-color: #202020;
+    --font-color: white;
+
+}
+
+/*procuct*/
+
+.aside-bar-main-content{
+    display: grid;
+    grid-template-columns: 20% 80%;
+     background-color: #183035;
+}
+.content-heading{
+     color: rgb(0, 238, 255);
+     font-size: 2rem;
+     font-weight: 600;
+     display: flex;
+     justify-content: center;
+     margin-top: 3.5rem;
+}
+
+/*********************************CARD-VERTICAL***********************/
+.card-vertical {
+    width: 24rem;
+    background-color: var(--font-color);
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px  var(--font-color);
+    max-height: 45rem
+
+;
+}
+.btn-clearall{
+    color: #202020;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    padding: .3rem;
+}
+
+.flex-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: center;
+}
+
+.CARD-IMG-product-list {
+    width: auto;
+    height: 22rem;
+}
+
+.card-nav-icon {
+    display: flex;
+    float: right;
+    border: none;
+    gap: .5rem;
+    font-size: 1.3rem;
+    color: #00f4fc;
+    padding: .5REM;
+    border-radius: 2px;
+}
+.desc{
+    color: #183035;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.price-discription-container{
+    display: flex;
+    gap: 2rem;
+}
+
+.badge-rating{
+    display: flex;
+    width: 4rem;
+    gap: .5rem;
+    height: 1.5rem;
+    background-color: green;
+    color:aliceblue;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.card-text {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.add-cart {
+    border: none;
+    padding: .5rem;
+    background-color: var(--SECONDERY-color);
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+.wishlist{
+    background-color: #202020;
+    color: aliceblue;
+}
+
+.products {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    margin-left: 3rem;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: clip;
+    height: calc(100vh - 6.24rem);
+ 
+}
+
+.card-cta-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.card-price {
+    color: green;
+}
+.orignal{
+    color: #4e4e4e;
+
+}
+.discount{
+    text-decoration: line-through;
+}
+
+
+/**************************************************/
+.body-section {
+   width: 20%;
+
+}
+
+.aside-section {
+    background-color: RGB(18, 36, 40);
+    overflow-y: scroll;
+    /* max-height: 200%; */
+    /*max-width: 25rem;*/
+    padding: 2rem;
+    width: auto;
+    overflow-y: auto;
+    overflow-x: clip;
+    height: calc(100vh - 6.24rem);
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+}
+
+.main-section{
+    /* background-color: rgba(189, 204, 189, 0.781); */
+    width: 100%;
+}
+
+.aside-section-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0rem;
+    color: white;
+}
+
+.aside-section-title{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+
+.clear-btn{
+    text-decoration: underline;
+    color: rgb(0, 238, 255);
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.price-section{
+    margin: 2rem 0rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(0, 238, 255);
+ 
+}
+
+.aside-section-title-md{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.range-input-container{
+    padding: 1.5rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.price-label{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 22rem;
+    color: rgb(0, 238, 255);
+}
+
+.input-range{
+    accent-color: rgb(0, 238, 255);
+    width: 22rem;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.checkbox-input{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    margin-top: 0;
+    align-content: center;
+    accent-color: rgb(0, 238, 255);
+}
+
+.category-section-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+    color: rgb(0, 238, 255);
+}
+
+.checkbox{
+    height: 1.3rem;
+    width: 1.3rem;
+    display: flex;
+    color: rgb(0, 238, 255);
+    
+    
+}
+
+.rating-section{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.3rem;
+     color: rgb(0, 238, 255);
+}
+
+
+.radio{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.fa-star{
+    font-size: 1.5rem;
+}
+
+.radio-input{
+    accent-color: rgb(0, 183, 255);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.main-section{
+    padding: 3rem ;
+}
+
+.main-section-title{
+    font-size: 3rem;
+    font-weight: 550;
+}
+
+.main-section-card{
+   margin-top: 4rem;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 4rem;
+   justify-content: center;
+   align-items: center;
+}
+/*********************horizontel card*********************/
+.home-card-Md-body{
+    width: auto;
+    border-radius: 5px;
+    gap: 4rem;
+    padding: 2rem;
+}
+.card-heading-md-2{
+    background-color: #fe9900;
+    color: aliceblue;
+    font-size: 1.2rem;
+    width: auto;
+    border-radius: 5px;
+
+}
+.card-heading-md-1{
+      background-color: #fe9900;
+    color: aliceblue;
+    font-size: 1.2rem;
+    border: none;
+    height: 3rem;
+
+}
+.second-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+}
