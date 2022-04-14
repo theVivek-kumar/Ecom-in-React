@@ -17,7 +17,6 @@ import './components/Product/Product.css';
 import { CartPage } from './components/cartPage/cartPage';
 import LandingPage from './Pages/LandingPage';
 import { Route, Routes } from "react-router-dom";
-import {BrowserRouter} from 'react-router-dom';
 import { Signin } from './components/SignIn/Signin';
 import './components/SignIn/signin.css';
 import { WishListpage } from './Pages/WishListpage';
