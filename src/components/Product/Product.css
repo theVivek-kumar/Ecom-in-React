@@ -41,9 +41,9 @@
 /*procuct*/
 
 .aside-bar-main-content{
-    display: grid;
-    grid-template-columns: 20% 80%;
-     background-color: #183035;
+   display: grid;
+   grid-template-columns: 20% 80%;
+   background-color: #183035;
 }
 .content-heading{
      color: rgb(0, 238, 255);
@@ -260,6 +260,7 @@
     gap: 1rem;
     align-items: flex-end;
     margin-top: 0;
+        align-content: center;
     align-content: center;
     accent-color: rgb(0, 238, 255);
 }
