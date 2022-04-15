@@ -3,7 +3,7 @@ import Navbar from '../components/navbar/Navbar';
 const Login = () => {
     return (
         <>
-        <Navbar/>
+        
          <div className="container-login">
         <div className="login-container-form">
             <div className="login-form-header">
