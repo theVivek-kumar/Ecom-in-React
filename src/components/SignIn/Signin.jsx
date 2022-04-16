@@ -1,17 +1,21 @@
 
-import React from 'react'
-import Navbar from '../navbar/Navbar'
+import React from 'react';
+import {FcBusinessman} from "react-icons/fc";
+import { NavLink } from 'react-router-dom';
 
 
 const Signin = () => {
     return (
         <>
-            <Navbar />
+           
             <div className="container-login">
                 <div className="login-container-form">
-                    <div className="login-Fp-header">
-                        <h2>Signup</h2>
-                    </div>
+                    
+                    <div className="login-Fp-header"><FcBusinessman/></div>
+                    <label className="lable" for="input">First-Name</label>
+                    <input className="input-lg" type="text" placeholder="Confirm-First-name" />
+                    <label className="lable" for="input">Second-Name</label>
+                    <input className="input-lg" type="text" placeholder="Confirm-Second-name" />
                     <label className="lable" for="input">Email adress</label>
                     <input className="input-lg" type="email" placeholder="Enter Email" />
                     <label className="lable" for="input">Password</label>
@@ -25,7 +29,7 @@ const Signin = () => {
                     </div>
                     <a className="Login-btn" href="#">Create New Account</a>
                     <div className="login-create-acc">
-                        <h4>Already have an Account</h4>
+                     <NavLink to="/login"><button  className='create-new-acc'>Already have an Account</button></NavLink> 
                     </div>
                 </div>
             </div>

@@ -1,16 +1,15 @@
 import React from 'react';
-import { CardHorizontal } from '../components/Card/cardHorizontal';
-import Navbar from '../components/navbar/Navbar';
-
+import { NavLink } from 'react-router-dom';
+import {RiLoginCircleLine} from "react-icons/ri";
 const Login = () => {
     return (
         <>
-        <Navbar/>
-         <div className="container-login">
-        <div className="login-container-form">
-            <div className="login-form-header">
-                <h2>Login</h2>
-            </div>
+             <div className="container-login">
+             <div className="login-container-form">
+             <div className="login-form-header">
+              <div  className="login-Fp-header"><RiLoginCircleLine/></div>
+              <p className='heading-login' >LogIn</p>
+              </div>
               <label className="label" for="input">Email adress</label>
               <input className="input-lg" type="email" placeholder="Enter Email"/>
               <label className="label" for="input">Password</label>
@@ -20,9 +19,9 @@ const Login = () => {
                 <h3>Remember me</h3>
                 <span className="frg-paswrd"> Forgot your Password?</span>
               </div>
-              <a className="Login-btn" href="#">Login</a>
+              <NavLink to ="/"><a className="Login-btn">Login</a></NavLink>
               <div className="login-create-acc">
-              <a href="/SignIn/SignIn.html"><h4>Create New Account</h4></a>
+              <NavLink to = "/signIn"><button className='create-new-acc'>Create New Account</button></NavLink>
               </div>
               </div>
         </div>
