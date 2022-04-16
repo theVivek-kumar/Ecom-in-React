@@ -12,6 +12,7 @@ font-size: 62.5%;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  display: flex;
   margin-top: 5rem;
   flex-wrap: wrap;
   min-width: 35rem;
