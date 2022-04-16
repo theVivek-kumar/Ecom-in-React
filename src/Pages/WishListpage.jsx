@@ -33,7 +33,7 @@ const WishListpage = () => {
             { <div className='wishlist-section-md'>
                 <div className='wishLst-container'>
                     <h2 className='wishlist-title' style={{
-                        color:"white",fontSize:"3rem"}}>My<span style={{color:"#f5ac2c"}}>-Wishlist</span></h2>
+                        color:"white",fontSize:"3rem",marginTop:"4rem" }}>My<span style={{color:"#f5ac2c"}}>-Wishlist</span></h2>
                     </div>
                  <div className=' wishList-items-add'>
                  <div className='wishlist-header'>      

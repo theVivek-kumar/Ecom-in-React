@@ -18,10 +18,6 @@
 
 
 }
-.cart-page-container-md{
-    display: flex;
-}
-
 .fa-search {
     padding: 4px;
     font-size: 1.6rem;
@@ -83,11 +79,14 @@
 .home-card-Md-body {
     background-color: #ffffff;
     display: flex;
-    width: 40%;
+    width: 60%;
     box-shadow: 0px 0px 10px #868585;
-    padding: .3rem;
+    padding: 1rem;
+    max-height: 50%;
+    min-height: 30%;
     margin: 1rem;
-
+    flex-wrap: wrap;
+    gap: 20%;
 }
 
 .card-side {
@@ -151,11 +150,12 @@
 .second-card{
      background-color: #ffffff;
      display: flex;
-     width: 24%;
+     width: 80%;
      max-height: 25rem ;
      box-shadow: 0px 0px 10px #868585;
-     padding: .8rem;
+     padding: 1rem;
      margin: 1rem;
+     font-size: 1.3rem;
      border-radius: 5px;
 
 }
@@ -171,4 +171,15 @@
    justify-content: center;
    align-items: center;
    align-content: center;
+}
+.card-heading-md-btn:hover{
+    color: #ffffff;
+    background-color:#ffb546;
+
+}
+.card-heading-md-btn{
+    background-color: #ff9900;
+    border: none;
+    color: #ece9f2;
+     font-weight: bolder;
 }

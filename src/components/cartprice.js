@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './Card/Card.css';
 
 function Cartprice({ qty, price, discountPrice, totalPrice ,title}) {
@@ -39,7 +40,7 @@ function Cartprice({ qty, price, discountPrice, totalPrice ,title}) {
                 
                 </div>
                 <div className="card-heading-md-2">
-                    <h3>Place Order</h3>
+                    <NavLink to ="/login"><button className='card-heading-md-btn'>Place Order</button></NavLink>
                 </div>
 
 

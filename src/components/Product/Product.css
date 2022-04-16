@@ -61,8 +61,7 @@
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0px 0px 5px  var(--font-color);
-    max-height: 45rem
-
+    max-height: 45rem;
 ;
 }
 .btn-clearall{
@@ -148,7 +147,6 @@
     overflow-y: auto;
     overflow-x: clip;
     height: calc(100vh - 6.24rem);
- 
 }
 
 .card-cta-btn {
@@ -172,7 +170,7 @@
 
 /**************************************************/
 .body-section {
-   width: 20%;
+ width: 20%;
 
 }
 
@@ -342,7 +340,7 @@
 
 }
 .card-heading-md-1{
-      background-color: #fe9900;
+    background-color: #fe9900;
     color: aliceblue;
     font-size: 1.2rem;
     border: none;
@@ -353,5 +351,5 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-     align-items: center;
+    align-items: center;
 }

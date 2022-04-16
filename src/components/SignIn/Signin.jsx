@@ -7,7 +7,6 @@ import { NavLink } from 'react-router-dom';
 const Signin = () => {
     return (
         <>
-           
             <div className="container-login">
                 <div className="login-container-form">
                     
@@ -25,18 +24,14 @@ const Signin = () => {
                     <div className="input-check-btn">
                         <input className="input-checkbox" type="checkbox" />
                         <h3>I accept all the term & conditions</h3>
-                
                     </div>
                     <a className="Login-btn" href="#">Create New Account</a>
                     <div className="login-create-acc">
-                     <NavLink to="/login"><button  className='create-new-acc'>Already have an Account</button></NavLink> 
+                    <NavLink to="/login"><button  className='create-new-acc'>Already have an Account</button></NavLink> 
                     </div>
                 </div>
             </div>
         </>
-          
-
-      
     )
 };
 

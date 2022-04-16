@@ -1,6 +1,6 @@
 :root{
-  font-size: 62.5%;
- @import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&family=Poppins:wght@300&display=swap');
+font-size: 62.5%;
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&family=Poppins:wght@300&display=swap');
 }
 
 .seprator{
@@ -16,23 +16,30 @@
   flex-wrap: wrap;
   min-width: 35rem;
 }
-.cart-section-cart-view{
+/* .cart-section-cart-view{
   margin: 5rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-   align-items: center;
+  align-items: center;
   /* align-content: center;  */
-  flex-direction: column;
- 
-
-}
+ */
 .cart-section-card{
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-   min-width: 35rem;
-   flex-direction: column;
+  min-width: 35rem;
+  flex-direction: column;
+}
+.cart-heading{
+  justify-content: center;
+  align-items: center;
+}
+.cartpage-grid-view{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-top: 4rem;
+
 }
 
