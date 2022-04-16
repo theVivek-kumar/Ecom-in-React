@@ -36,6 +36,7 @@ font-size: 62.5%;
 .cart-heading{
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 .cartpage-grid-view{
   display: grid;

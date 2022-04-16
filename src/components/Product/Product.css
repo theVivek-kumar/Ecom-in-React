@@ -73,7 +73,7 @@
     padding: .3rem;
 }
 
-.flex-row {
+.flex-row-flex-wrap {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
@@ -138,12 +138,9 @@
 }
 
 .products {
-    display: flex;
-    flex-direction: row;
     gap: 1rem;
     justify-content: center;
     margin-left: 3rem;
-    flex-wrap: wrap;
     overflow-y: auto;
     overflow-x: clip;
     height: calc(100vh - 6.24rem);

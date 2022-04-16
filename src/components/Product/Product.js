@@ -256,12 +256,10 @@ const Product = () => {
         </aside>
  
        {/* ...........main content........... */}
-        
+                 
                 <section className="products">
                     <h1 className="content-heading">Showing All Products</h1>
-            
-                    <div className="flex-row flex-wrap">
-                        
+                     <div className="flex-row-flex-wrap">
                         {/* {productListing.map(product => (<Card key={product._id} product={product}/>))} */}
                         {filteredcategoryNameData.map(product => (<Card key={product._id} product={product}
                             addToCart={() => addToCart(product, product._id)}
