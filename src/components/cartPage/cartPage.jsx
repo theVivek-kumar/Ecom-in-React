@@ -53,12 +53,12 @@ const CartPage = () => {
             
             </div>
             {
-                    cart.length === 0 ? <div className="cart-heading-my-cart"></div> : <Cartprice qty={quantity} price={price} discountPrice={discountedPrice} totalPrice={totalPrice}/>
+                    cart.length === 0 ?  <h3 className="cart-heading" style={{ color: "white", fontSize: "4rem" }}>Your cart is<span style={{ color: "#f5ac2c", alignItems: "center" }}>-Empty -- </span> <MdRemoveShoppingCart /></h3>: <Cartprice qty={quantity} price={price} discountPrice={discountedPrice} totalPrice={totalPrice}/>
                     
                 }
             </div>
                
-              <h3 className="cart-heading" style={{ color: "white", fontSize: "4rem" }}>Your cart is<span style={{ color: "#f5ac2c", alignItems: "center" }}>-Empty -- </span> <MdRemoveShoppingCart /></h3>
+             
             
             
             </>

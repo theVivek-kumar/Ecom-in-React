@@ -25,9 +25,9 @@ font-size: 62.5%;
   flex-direction: column;
 }
 .cart-heading{
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 37%;
 }
 .cartpage-grid-view{
   display: grid;
