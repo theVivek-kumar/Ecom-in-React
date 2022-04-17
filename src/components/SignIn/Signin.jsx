@@ -11,9 +11,9 @@ const Signin = () => {
                 <div className="login-container-form">
                     
                     <div className="login-Fp-header"><FcBusinessman/></div>
-                    <label className="lable" for="input">First-Name</label>
+                    <label className="lable" for="input">FirstName</label>
                     <input className="input-lg" type="text" placeholder="Confirm-First-name" />
-                    <label className="lable" for="input">Second-Name</label>
+                    <label className="lable" for="input">LastName</label>
                     <input className="input-lg" type="text" placeholder="Confirm-Second-name" />
                     <label className="lable" for="input">Email adress</label>
                     <input className="input-lg" type="email" placeholder="Enter Email" />

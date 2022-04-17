@@ -2,9 +2,12 @@ import React from 'react';
 import { BsCartCheck } from "react-icons/bs";
 import {BiHeart,BiSearch} from "react-icons/bi";
 import { NavLink } from "react-router-dom";
+import { useContext } from 'react/cjs/react.production.min';
+import { CartContext } from '../cartPage/cartContext';
 
 
 const Navbar = () => {
+  //  const { cart} =useContext(CartContext)
 
   return (
     <nav className="navbar-head-container">
@@ -18,7 +21,8 @@ const Navbar = () => {
           </div>
         
       </div>
-      <div className='navbar-icons'>
+        <div className='navbar-icons'>
+          {/* <div class="badge--icon">{ cart.length}</div> */}
           <NavLink to ="/Cartpage"><BsCartCheck className='icons' /></NavLink> 
           <NavLink to ="/wishList "><BiHeart className='icons'/></NavLink>
       </div>

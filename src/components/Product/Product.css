@@ -132,6 +132,10 @@
     border-radius: 5px;
 
 }
+.add-cart:hover{
+    background-color:#183035;
+    color: aliceblue;
+}
 .wishlist{
     background-color: #202020;
     color: aliceblue;
