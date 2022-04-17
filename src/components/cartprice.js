@@ -26,7 +26,7 @@ function Cartprice({ qty, price, discountPrice, totalPrice ,title}) {
                 </div>
                 <div className="discount-chart">
                     <h4>Dilivery Charge</h4>
-                    <h4>$50</h4>
+                    <h4>$199</h4>
                 
                 </div>
                 <div className="discount-chart">

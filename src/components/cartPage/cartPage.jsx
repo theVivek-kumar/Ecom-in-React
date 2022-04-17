@@ -28,10 +28,10 @@ const CartPage = () => {
     }, []);
 
     const price = cart.reduce((acc, curr) => acc = acc + curr.qty * curr.price.original, 0);
-    const discountedPrice = cart.reduce((acc, curr) => acc = acc + curr.price.original - curr.price.discounted, 0);
+    const discountedPrice = cart.reduce((acc, curr) => acc = acc + Number(curr.price.original) - Number(curr.price.discounted), 0);
     
     const quantity = cart.reduce((acc, curr) => acc = acc + curr.qty, 0);
-    const totalPrice = price - discountedPrice + 199;
+    const totalPrice = price - Number(discountedPrice) + 199;
     
     
 
