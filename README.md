@@ -1,3 +1,22 @@
+![image](https://user-images.githubusercontent.com/57774129/163735570-addcb7fb-64ca-4067-bd52-23a78d54e011.png)
+![image](https://user-images.githubusercontent.com/57774129/163735578-23eb7288-ada3-417c-9486-35da66d9e39f.png)
+![image](https://user-images.githubusercontent.com/57774129/163735588-5c2beace-62b0-4ccb-986a-b015f36e6ec1.png)
+![image](https://user-images.githubusercontent.com/57774129/163735559-b540bbdc-495b-41e4-81e5-6c3d4ea5bca1.png)
+#Ecom in react 
+# P0 features
+## `Home Page`
+ # Product Listing Page
+### `Filters by`
+### `Price`
+### `Category`
+### `Ratings`
+# Cart Management
+# Wishlist Management
+## Authentication
+### `Sign-up`
+### `Login`
+### `Logout`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
