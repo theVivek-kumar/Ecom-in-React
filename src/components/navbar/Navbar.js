@@ -2,14 +2,10 @@ import React from 'react';
 import { BsCartCheck } from "react-icons/bs";
 import {BiHeart,BiSearch} from "react-icons/bi";
 import { NavLink } from "react-router-dom";
-import { useContext } from 'react/cjs/react.production.min';
-import { CartContext } from '../cartPage/cartContext';
-import { WishListContext } from '../../context/wishlistContext';
 
 
 const Navbar = () => {
-    const { cart, setCart } = useContext(CartContext);
-    const { wishList,setwishList } = state;
+
   return (
     <nav className="navbar-head-container">
         <div className="navbar-md-head">
@@ -23,11 +19,8 @@ const Navbar = () => {
         
       </div>
       <div className='navbar-icons'>
-          {/* <NavLink to = "/cart"><BsCartCheck className='icons' /></NavLink> */}
-           <span className="Badhe-nav-num-Tp">{cart.length}</span> 
           <NavLink to ="/Cartpage"><BsCartCheck className='icons' /></NavLink> 
           <NavLink to ="/wishList "><BiHeart className='icons'/></NavLink>
-          {/* <NavLink to ="/wishlist"> <BiHeart className='icons'/></NavLink> */}
       </div>
       <div className='seprator'></div>
       <div className='navbar-login-signin'>

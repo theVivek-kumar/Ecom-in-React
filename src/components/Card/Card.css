@@ -82,8 +82,7 @@
     width: 60%;
     box-shadow: 0px 0px 10px #868585;
     padding: 1rem;
-    max-height: 50%;
-    min-height: 30%;
+    height: auto;
     margin: 1rem;
     flex-wrap: wrap;
     gap: 20%;

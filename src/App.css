@@ -17,15 +17,6 @@ font-size: 62.5%;
   flex-wrap: wrap;
   min-width: 35rem;
 }
-/* .cart-section-cart-view{
-  margin: 5rem;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  align-items: center;
-  /* align-content: center;  */
- */
 .cart-section-card{
   display: flex;
   flex-wrap: wrap;
