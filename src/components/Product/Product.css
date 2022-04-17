@@ -127,6 +127,7 @@
 .add-cart {
     border: none;
     padding: .5rem;
+    color: aliceblue;
     background-color: var(--SECONDERY-color);
     font-weight: 600;
     border-radius: 5px;
@@ -137,8 +138,14 @@
     color: aliceblue;
 }
 .wishlist{
-    background-color: #202020;
-    color: aliceblue;
+    font-size: 2rem;
+    background-color: aliceblue;
+    color: #ffaf02;
+    padding-top: .8rem;
+
+}
+.wishlist:focus{
+    color: #fe0000;
 }
 
 .products {

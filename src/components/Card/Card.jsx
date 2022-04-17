@@ -1,7 +1,7 @@
 import React from 'react';
+import {FaHeart} from "react-icons/fa";
 import { BsFillStarFill } from "react-icons/bs";
-import { BsCartCheckFill } from "react-icons/bs";
-import { BsShareFill } from "react-icons/bs";
+
 
 function Card({ product,addToCart,addToWishList}) {
     const {title, desc, rating, instock,  price:{original, discount, discounted}, categoryName , img} = product;
@@ -30,7 +30,7 @@ function Card({ product,addToCart,addToWishList}) {
                     <div className="card-nav-icon">
                         <button
                             onClick={addToWishList}
-                            className="btn primary-btn-sm add-cart wishlist">Move to Wishlist</button>
+                            className="btn primary-btn-sm add-cart wishlist"><FaHeart/></button>
                                    
                                 </div>
                             </div>
