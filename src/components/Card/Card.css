@@ -90,6 +90,8 @@
 
 .card-side {
     display: flex;
+    padding-left: 2rem;
+    padding-right: 4rem;
     flex-direction: column;
 
 }
