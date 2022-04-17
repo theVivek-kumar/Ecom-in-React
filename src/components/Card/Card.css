@@ -79,13 +79,13 @@
 .home-card-Md-body {
     background-color: #ffffff;
     display: flex;
-    width: 60%;
+    /* width: 20%; */
     box-shadow: 0px 0px 10px #868585;
-    padding: 1rem;
+    padding: 1.5rem;
     height: auto;
     margin: 1rem;
-    flex-wrap: wrap;
-    gap: 20%;
+    /* flex-wrap: wrap; */
+    gap: 10%;
 }
 
 .card-side {

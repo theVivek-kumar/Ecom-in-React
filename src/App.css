@@ -31,7 +31,7 @@ font-size: 62.5%;
 }
 .cartpage-grid-view{
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: .6fr .4fr;
   margin-top: 4rem;
 
 }
