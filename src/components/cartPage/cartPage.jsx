@@ -57,7 +57,10 @@ const CartPage = () => {
                     
                 }
             </div>
-            <h3 className="cart-heading" style={{ color: "white",fontSize:"4rem"}}>Your cart is<span style={{color:"#f5ac2c",alignItems:"center"}}>-Empty -- </span> <MdRemoveShoppingCart/></h3>
+            
+              <h3 className="cart-heading" style={{ color: "white", fontSize: "4rem" }}>Your cart is<span style={{ color: "#f5ac2c", alignItems: "center" }}>-Empty -- </span> <MdRemoveShoppingCart /></h3>
+            
+            
             </>
           
     )

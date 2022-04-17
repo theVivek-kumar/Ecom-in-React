@@ -255,18 +255,17 @@ const Product = () => {
 
         </aside>
  
-       {/* ...........main content........... */}
+                {/* ...........main content........... */}
                  
                 <section className="products">
                     <h1 className="content-heading">Showing All Products</h1>
                      <div className="flex-row-flex-wrap">
                         {/* {productListing.map(product => (<Card key={product._id} product={product}/>))} */}
                         {filteredcategoryNameData.map(product => (<Card key={product._id} product={product}
-                            addToCart={() => addToCart(product, product._id)}
-                            addToWishList={() => addToWishList (product,setwishList)}
+                        addToCart={() => addToCart(product, product._id)}
+                        addToWishList={() => addToWishList (product,setwishList)}
                         />))}
-                      
-                    
+
                 </div>
         </section>
     </div>
