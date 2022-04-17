@@ -16,8 +16,8 @@ const CartProvider = ({ children }) => {
                 }
             );
           if (response.status === 200) {
-              setCart(response.data.cart);
-              console.log("cart items",response.data.cart)
+            setCart(response.data.cart);
+            console.log("cart items",response.data.cart)
             }
                 
         } catch (error) {
