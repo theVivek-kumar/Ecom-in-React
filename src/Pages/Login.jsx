@@ -11,7 +11,7 @@ const Login = () => {
               <p className='heading-login' >LogIn</p>
               </div>
               <label className="label" for="input">Email adress</label>
-              <input className="input-lg" type="email" placeholder="Enter Email"/>
+              <input className="input-lg" type="email" placeholder="Enter  dcb,cdbsEmail"/>
               <label className="label" for="input">Password</label>
               <input className="input-lg" type="password" placeholder="************"/>
               <div class="input-check-btn">
